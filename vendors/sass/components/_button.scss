@@ -1,0 +1,7 @@
+.btn-text{
+    &:link, &:visited{
+        text-decoration: none;
+        color: $color-primary;
+        display: inline-block;
+    }
+}

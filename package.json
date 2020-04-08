@@ -1,0 +1,21 @@
+{
+  "name": "jaworski-wedding-project",
+  "version": "3.0.0",
+  "description": "Webpage for David and Jelena using sass",
+  "main": "index.js",
+  "scripts": {
+    "compileWait:sass": "node-sass vendors/sass/main.scss resources/css/style.css -w",
+    "compile:sass": "node-sass vendors/sass/main.scss resources/css/style.css"
+  },
+  "keywords": [
+    "webpage",
+    "wedding",
+    "sass",
+    "cscc"
+  ],
+  "author": "David Musko",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
