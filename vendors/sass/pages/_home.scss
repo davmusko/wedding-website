@@ -1,4 +1,6 @@
 .section-events{
-    padding: 15rem 0;
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    padding: 20rem 0 10rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light+cc, $color-primary+cc);
+    -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100%,0 100%);
+    clip-path: polygon(0 20vh, 100% 0, 100% 100%,0 100%);
 }

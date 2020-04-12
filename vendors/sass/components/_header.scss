@@ -1,0 +1,36 @@
+.header{
+    position: relative;
+    height: 98vh;
+    background-image: linear-gradient(
+        to right bottom,
+        $color-primary+cc,
+        $color-primary-light+cc);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh,0 100%);
+
+    &__text-box{
+        text-align: center;
+        color:$color-white;
+        position:absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-shadow: .75rem 1rem 2rem rgba($color-black, .4);
+
+    }
+    &__title--name{
+        font-size: 4.4rem;
+        letter-spacing: .7rem;
+        display: block;
+        border-bottom: 1px $color-white solid;
+    }
+    &__title--date{
+        letter-spacing: .4rem;
+        display: block;
+        font-size: 4rem;
+        & .super{
+            font-size: 2rem;
+        }
+    }
+
+}

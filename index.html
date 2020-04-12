@@ -4,51 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="resources/img/icons/cross.svg" type="image/x-icon">
     <!-- FONTS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
-    <title>Return2Love</title>
+    <title>Return to Love</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <section class="section-events">
-        <div class="row">
-            <div class="event event--ceremony">
-                <div class="event__info">
-                    <div class="event__title">
-                        <h2 class="heading-2">Ceremony</h2>
-                    </div>
-                    <div class="event__body">
-                        <div class="event__time">
-                            <h3 class="heading-3">Join us Friday, at 1:00pm-</h3>
+    <header class="header">
+
+        <div class="header__text-box">
+            <h1 class="heading-1">
+                <span class="header__title--name">David & Jelena</span>
+                <span class="header__title--date">September 18<span class="super">th</span>, 2020</span>
+            </h1>
+        </div>
+        <div class="bg-media">
+            <video class="bg-media__content" autoplay loop muted>
+                <source src="resources/video/wedding.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+    <main>
+        <section class="section-events">
+            <div class="row">
+                <div class="event event--ceremony">
+                    <div class="event__info">
+                        <div class="event__title">
+                            <h2 class="heading-2">Ceremony</h2>
                         </div>
-                        <div class="event__date">
-                            <h3 class="heading-3">-September 18th 2020</h3>
-                        </div>
-                        <div class="event__address">
-                            <ul>
-                                <li>Sacred Heart of Jesus Catholic Parish</li>
-                                <li>156 Valley Ave SW</li>
-                                <li>Grand Rapids, MI 49504</li>
-                                <li><a class="btn-text" href="#">Visit</a><a class="btn-text" href="#">Map</a></li>
-                            </ul>
+                        <div class="event__body">
+                            <div class="event__time">
+                                <h3 class="heading-3">Join us, Friday at 1:00pm</h3>
+                            </div>
+                            <div class="event__date">
+                                <h4 class="heading-4">-September 18<span class="super">th</span>, 2020-</h4>
+                            </div>
+                            <div class="event__address">
+                                <ul>
+                                    <li>Sacred Heart of Jesus Catholic Parish</li>
+                                    <li>156 Valley Ave SW</li>
+                                    <li>Grand Rapids, MI 49504</li>
+
+                                </ul>
+                                <div><a class="btn-text" href="https://www.sacredheartgr.org/" target="_blank">Visit
+                                        &rarr;</a></div>
+                                <div><a class="btn-text" href="#">Map</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="event event--reception">
+                    <div class="event__info">
+                        <div class="event__title">
+                            <h2 class="heading-2">Reception</h2>
+                        </div>
+                        <div class="event__body">
+                            <div class="event__time">
+                                <h3 class="heading-3">Cocktails to follow</h3>
+                            </div>
+                            <div class="event__date">
+                                <h4 class="heading-4">-beginning at 5:00pm-</h4>
+                            </div>
+                            <div class="event__address">
+                                <ul>
+                                    <li>Macatawa Golf Club</li>
+                                    <li>4600 Macatawa Legends Blvd.</li>
+                                    <li>Holland, MI 49424</li>
+                                </ul>
+                                <div><a class="btn-text" href="https://macatawagc.com/" target="_blank">Visit
+                                        &rarr;</a></div>
+                                <div><a class="btn-text" href="#">Map</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img class="footer__logo" src="resources\img\dove.png" alt="Dove">
         </div>
         <div class="row">
-            <div class="event event--reception">
-                <div class="event__info border-blue">
-                    <h2 class="heading-2">Reception</h2>
+            <div class="col-1-2">
+                <p class="footer__copyright">
+                    Copyright &copy;David Musko 2020.<br>
+                    You may use this website for products and projects - commercial or otherwise.<br>
+                    Design - <a href="https://codingheroes.io/" class="footer__link" target="_blank">Jonas Schmedtmann</a><br>
+                    Icons - <a href="https://www.flaticon.com/authors/freepik" class="footer__link" target="_blank">Freepik</a><br>
+                    Fonts: <a href="https://fonts.google.com/specimen/Cinzel?query=cin" class="footer__link">'Cinzel' by Natanael Gama</a>,
+                    <a href="https://fonts.google.com/specimen/Raleway?query=r" class="footer__link">'Raleway'</a>
+
+                </p>
+            </div>
+            <div class="col-1-2">
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a class="footer__link" href="#">Home</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
+                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
