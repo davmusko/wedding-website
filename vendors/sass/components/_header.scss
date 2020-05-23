@@ -12,19 +12,21 @@
         text-align: center;
         color:$color-white;
         position:absolute;
-        top: 50%;
+        top: 40%;
         left:50%;
         transform: translate(-50%, -50%);
-        text-shadow: .75rem 1rem 2rem rgba($color-black, .4);
+        text-shadow: .25rem .5rem .6rem rgba($color-black, .4);
 
     }
     &__title--name{
+        font-weight: 400;
         font-size: 4.4rem;
         letter-spacing: .7rem;
         display: block;
         border-bottom: 1px $color-white solid;
     }
     &__title--date{
+        font-weight: 400;
         letter-spacing: .4rem;
         display: block;
         font-size: 4rem;

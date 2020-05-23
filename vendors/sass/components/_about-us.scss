@@ -1,0 +1,44 @@
+.couple {
+  &__about-us {
+    padding: 5rem;
+    text-align: left;
+    & hr {
+      margin: 5rem auto 3rem auto;
+      border: none;
+      border-top: dotted 2rem;
+      width: 20%;
+      opacity: .75;
+    }
+  }
+  &__img {
+      border: $color-primary-light 2px solid;
+    box-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.5);
+    border-radius: 50%;
+    width: 25%;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    &--1 {
+      transform: translateX(-3rem);
+      float: left;
+    }
+    &--2 {
+      shape-outside: circle(50% at 50% 50%);
+      transform: translateX(3rem);
+      float: right;
+    }
+  }
+  &__text p {
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: 0.007rem;
+    font-weight: 500;
+  }
+  &__paragraph {
+    &-1 p {
+      padding: 3rem 0;
+    }
+    &-2 p {
+      padding: 5rem 0;
+    }
+  }
+}

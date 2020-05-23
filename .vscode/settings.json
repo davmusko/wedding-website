@@ -1,11 +1,11 @@
 {
-    "window.title": "CURRENT WEDDING PROJECT",
-    "liveServer.settings.port": 5501,
+    "window.title": "Wedding Website!",
     "workbench.colorCustomizations": {
         "[Markdown Editor Dark]": {
             "titleBar.activeBackground": "#00707dcd",
             "titleBar.activeForeground":"#ffffff",
         },
     },
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "liveServer.settings.port": 5501
 }

@@ -1,123 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="resources/img/icons/cross.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="resources/img/icons/cross.svg"
+      type="image/x-icon"
+    />
     <!-- FONTS -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/style.css" />
     <title>Return to Love</title>
-</head>
-
-<body>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__btn">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background"></div>
+      <nav class="navigation__nav-box">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link">home</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#couple" class="navigation__link">the couple</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#ceremony" class="navigation__link">ceremony</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#reception" class="navigation__link">Reception</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#wedding-party" class="navigation__link">wedding party</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#registry" class="navigation__link">registry</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
-
-        <div class="header__text-box">
-            <h1 class="heading-1">
-                <span class="header__title--name">David & Jelena</span>
-                <span class="header__title--date">September 18<span class="super">th</span>, 2020</span>
-            </h1>
-        </div>
-        <div class="bg-media">
-            <video class="bg-media__content" autoplay loop muted>
-                <source src="resources/video/wedding.mp4" type="video/mp4">
-            </video>
-        </div>
+      <div class="header__text-box">
+        <h1 class="heading-1">
+          <span class="header__title--name">David & Jelena</span>
+          <span class="header__title--date"
+            >September 18<span class="super">th</span>, 2020</span
+          >
+        </h1>
+      </div>
+      <div class="bg-media">
+        <video class="bg-media__content" autoplay loop muted>
+          <source src="resources/video/wedding.mp4" type="video/mp4" />
+        </video>
+      </div>
     </header>
     <main>
-        <section class="section-events">
-            <div class="row">
-                <div class="event event--ceremony">
-                    <div class="event__info">
-                        <div class="event__title">
-                            <h2 class="heading-2">Ceremony</h2>
-                        </div>
-                        <div class="event__body">
-                            <div class="event__time">
-                                <h3 class="heading-3">Join us, Friday at 1:00pm</h3>
-                            </div>
-                            <div class="event__date">
-                                <h4 class="heading-4">-September 18<span class="super">th</span>, 2020-</h4>
-                            </div>
-                            <div class="event__address">
-                                <ul>
-                                    <li>Sacred Heart of Jesus Catholic Parish</li>
-                                    <li>156 Valley Ave SW</li>
-                                    <li>Grand Rapids, MI 49504</li>
-
-                                </ul>
-                                <div><a class="btn-text" href="https://www.sacredheartgr.org/" target="_blank">Visit
-                                        &rarr;</a></div>
-                                <div><a class="btn-text" href="#">Map</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="event event--reception">
-                    <div class="event__info">
-                        <div class="event__title">
-                            <h2 class="heading-2">Reception</h2>
-                        </div>
-                        <div class="event__body">
-                            <div class="event__time">
-                                <h3 class="heading-3">Cocktails to follow</h3>
-                            </div>
-                            <div class="event__date">
-                                <h4 class="heading-4">-beginning at 5:00pm-</h4>
-                            </div>
-                            <div class="event__address">
-                                <ul>
-                                    <li>Macatawa Golf Club</li>
-                                    <li>4600 Macatawa Legends Blvd.</li>
-                                    <li>Holland, MI 49424</li>
-                                </ul>
-                                <div><a class="btn-text" href="https://macatawagc.com/" target="_blank">Visit
-                                        &rarr;</a></div>
-                                <div><a class="btn-text" href="#">Map</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__logo-box">
-            <img class="footer__logo" src="resources\img\dove.png" alt="Dove">
+      <section class="section-couple" id="couple">
+        <div class="text-center">
+          <h2 class="heading-2">
+            Meet the Couple
+          </h2>
+          <h3 class="heading-3">
+            -David & Jelena-
+          </h3>
         </div>
         <div class="row">
-            <div class="col-1-2">
-                <p class="footer__copyright">
-                    Copyright &copy;David Musko 2020.<br>
-                    You may use this website for products and projects - commercial or otherwise.<br>
-                    Design - <a href="https://codingheroes.io/" class="footer__link" target="_blank">Jonas Schmedtmann</a><br>
-                    Icons - <a href="https://www.flaticon.com/authors/freepik" class="footer__link" target="_blank">Freepik</a><br>
-                    Fonts: <a href="https://fonts.google.com/specimen/Cinzel?query=cin" class="footer__link">'Cinzel' by Natanael Gama</a>,
-                    <a href="https://fonts.google.com/specimen/Raleway?query=r" class="footer__link">'Raleway'</a>
-
+          <div class="couple__about-us">
+            <div class="couple__paragraph-1 couple__paragraph">
+              <img src="resources/img/couple-1.png" alt="David and Jelena" class="couple__img couple__img--1">
+              <div class="couple__text">
+                <p>
+                  David and Jelena met through Catholic Match, and had their
+                  first date on June 1st. From then on, Jelena knew David was
+                  someone special and wanted to get to know him more. David is
+                  from Troy, MI and his time spent traveling back and forth to
+                  Jelena solidified that the feeling was mutual. As they went on
+                  more dates, spent time together, and the BIG day of meeting
+                  the girls (Isabelle and Lucienne) had passed, Jelena knew he
+                  was going to stay around, not for just a few months, but for
+                  forever. David has shown a deep love to the girls and
+                  continues to lead us all towards our Lord, bringing great
+                  peace. He is a man of faith, hope, love and true kindness.
                 </p>
+              </div>
             </div>
-            <div class="col-1-2">
-                <div class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__list-item"><a class="footer__link" href="#">Home</a></li>
-                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
-                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
-                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
-                        <li class="footer__list-item"><a class="footer__link" href="#">Link</a></li>
-                    </ul>
-                </div>
+            <hr>
+            <div class="couple__paragraph-2 couple__paragraph">
+                  <img src="resources/img/couple-2.png" alt="David and Jelena" class="couple__img couple__img--2">
+                  <div class="couple__text">
+                        <p>Jelena knows that her late husband
+                            had a guiding hand in sending his three girls someone so very
+                            special, and that someone is David. We can't wait to continue
+                            down this new adventure and see what the Lord has in store for
+                            our new family. We want to thank you all for the love, prayers,
+                            and support you have given us. We can't wait to celebrate with
+                            you all as we begin this new life together</p>
+                  </div>
             </div>
+          </div>
         </div>
+      </section>
+      <section class="section-wedding-party">
+            <a id="wedding-party"></a>
+            <div class="row">
+                <figure class="polaroid">
+                    <img class="polaroid__img" src="resources/img/marija.jpg" alt="Marija Daly">
+                    <figcaption class="polaroid__caption">Marija Daly</figcaption>
+                </figure>
+                <figure class="polaroid">
+                    <img class="polaroid__img" src="resources/img/nasrene.jpg" alt="Nasrene Postma">
+                    <figcaption class="polaroid__caption">Nasrene Postma</figcaption>
+                </figure>
+            </div>
+        </section>
+      <section class="section-events">
+        <div class="row">
+          <div class="event event--ceremony" id="ceremony">
+            <div class="event__info">
+              <div class="event__title">
+                <h2 class="heading-2">Ceremony</h2>
+              </div>
+              <div class="event__body">
+                <div class="event__time">
+                  <h3 class="heading-3">Join us, Friday at 1:00pm</h3>
+                </div>
+                <div class="event__date">
+                  <h4 class="heading-4">
+                    -September 18<span class="super">th</span>, 2020-
+                  </h4>
+                </div>
+                <div class="event__address">
+                  <ul>
+                    <li>Sacred Heart of Jesus Catholic Parish</li>
+                    <li>156 Valley Ave SW</li>
+                    <li>Grand Rapids, MI 49504</li>
+                  </ul>
+                  <div>
+                    <a
+                      class="btn-text"
+                      href="https://www.sacredheartgr.org/"
+                      target="_blank"
+                      >Visit &rarr;</a
+                    >
+                  </div>
+                  <div><a class="btn-text" href="#">Map</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="event event--reception" id="reception">
+            <div class="event__info">
+              <div class="event__title">
+                <h2 class="heading-2">Reception</h2>
+              </div>
+              <div class="event__body">
+                <div class="event__time">
+                  <h3 class="heading-3">Cocktails to follow</h3>
+                </div>
+                <div class="event__date">
+                  <h4 class="heading-4">-beginning at 5:00pm-</h4>
+                </div>
+                <div class="event__address">
+                  <ul>
+                    <li>Macatawa Golf Club</li>
+                    <li>4600 Macatawa Legends Blvd.</li>
+                    <li>Holland, MI 49424</li>
+                  </ul>
+                  <div>
+                    <a
+                      class="btn-text"
+                      href="https://macatawagc.com/"
+                      target="_blank"
+                      >Visit &rarr;</a
+                    >
+                  </div>
+                  <div><a class="btn-text" href="#">Map</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-registry">
+        <a id="registry"></a>
+        <div class="row">
+          <div class="col-1-2">
+            <a class="test" href="#"></a>
+          </div>
+          <div class="col-1-2">
+            <!-- <a href="#"><img src="resources/img/amazon.png" alt="Amazon Logo"></a> -->
+            <a class="test2" href="#"></a>
+            <!-- <img src="resources/img/target.png" alt="Target Logo"> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img class="footer__logo" src="resources\img\dove.png" alt="Dove" />
+      </div>
+      <div class="row">
+        <div class="col-1-2">
+          <p class="footer__copyright">
+            Copyright &copy;David Musko 2020.<br />
+            You may use this website for products and projects - commercial or
+            otherwise.<br />
+            Design -
+            <a
+              href="https://codingheroes.io/"
+              class="footer__link"
+              target="_blank"
+              >Jonas Schmedtmann</a
+            ><br />
+            Icons -
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              class="footer__link"
+              target="_blank"
+              >Freepik</a
+            ><br />
+            Fonts:
+            <a
+              href="https://fonts.google.com/specimen/Cinzel?query=cin"
+              class="footer__link"
+              >'Cinzel' by Natanael Gama</a
+            >,
+            <a
+              href="https://fonts.google.com/specimen/Raleway?query=r"
+              class="footer__link"
+              >'Raleway'</a
+            >
+          </p>
+        </div>
+        <div class="col-1-2">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Home</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">The Couple</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#ceremony">Ceremony</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#reception">Reception</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#registry">Registry</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <script src="resources/js/script.js"></script>
+  </body>
 </html>
