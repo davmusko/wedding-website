@@ -21,6 +21,7 @@
     top: 0;
   }
   &__btn {
+    border: $color-primary-light 1px solid;
     position: fixed;
     background-color: $color-white;
     width: 7rem;
@@ -113,7 +114,6 @@
       padding: 1rem 2rem;
       color: $color-white;
       font-size: 3rem;
-      // font-weight: ; todo!
       text-decoration: none;
       text-transform: capitalize;
       display: inline-block;

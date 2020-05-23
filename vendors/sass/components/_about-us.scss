@@ -7,12 +7,12 @@
       border: none;
       border-top: dotted 2rem;
       width: 20%;
-      opacity: .75;
+      opacity: 0.75;
     }
   }
   &__img {
-      border: $color-primary-light 2px solid;
-    box-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.5);
+    border: #fff 0.6rem solid;
+    box-shadow: 0 0 3px 3px $color-grey-dark-3;
     border-radius: 50%;
     width: 25%;
     -webkit-shape-outside: circle(50% at 50% 50%);
