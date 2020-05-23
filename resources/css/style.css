@@ -11,7 +11,7 @@ html {
 body {
   padding: 2.5rem;
   box-sizing: border-box;
-  background-color: #CCE5D9; }
+  background-color: #eeeeee; }
 
 /*
 ||============================================================================||
@@ -26,7 +26,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #739986;
+  color: #343434;
   font-weight: normal;
   letter-spacing: .075rem; }
 
@@ -438,11 +438,12 @@ body {
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4); }
   .event--ceremony {
     margin-bottom: 15rem;
-    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(229, 204, 217, 0.3) 50%), url(../img/church.jpg); }
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/church.jpg); }
   .event--reception {
-    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(229, 204, 217, 0.3) 50%), url(../img/golfclub.jpg); }
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/golfclub.jpg); }
   .event__info {
-    width: 45%; }
+    width: 45%;
+    text-align: center; }
   .event__body {
     text-align: center;
     padding: 1.5rem; }
@@ -493,7 +494,7 @@ body {
     text-decoration: underline;
     display: inline-block; }
     .footer__link:visited:active, .footer__link:visited:hover, .footer__link:link:active, .footer__link:link:hover {
-      color: #339933;
+      color: #a7878f;
       text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
   .footer__copyright {
     color: #CCE5D9; }
@@ -501,7 +502,7 @@ body {
 .header {
   position: relative;
   height: 98vh;
-  background-image: linear-gradient(to right bottom, #339933cc, #9ACCB3cc);
+  background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
   .header__text-box {
@@ -549,7 +550,7 @@ body {
   top: 0; }
 
 .navigation__btn {
-  border: #9ACCB3 1px solid;
+  border: #c7b3b8 1px solid;
   position: fixed;
   background-color: #ffffff;
   width: 7rem;
@@ -600,7 +601,7 @@ body {
   top: 5rem;
   right: 5rem;
   z-index: 5;
-  background-image: radial-gradient(#9ACCB3, #339933);
+  background-image: radial-gradient(#c7b3b8, #a7878f);
   transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1); }
 
 .navigation__nav-box {
@@ -644,7 +645,7 @@ body {
   box-shadow: 0.5rem 1rem 2.5rem rgba(0, 0, 0, 0.4);
   background-position: 100%;
   transform: translateX(1rem);
-  color: #339933; }
+  color: #a7878f; }
 
 .owl-carousel .testimonial {
   background: #fff;
@@ -773,7 +774,7 @@ body {
 
 .section-events {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, #9ACCB3cc, #339933cc);
+  background-image: linear-gradient(to right bottom, #a7878fcc, #a7878fcc);
   transform: skewY(-3.75deg); }
   .section-events > * {
     transform: skewY(3.75deg); }
