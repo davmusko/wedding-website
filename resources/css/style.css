@@ -13,26 +13,6 @@ body {
   box-sizing: border-box;
   background-color: #CCE5D9; }
 
-.test {
-  margin: 10rem 1rem;
-  display: block;
-  background-image: url(../img/amazon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 25rem;
-  width: 100%; }
-
-.test2 {
-  margin: 10rem 1rem;
-  display: block;
-  background-image: url(../img/target.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 25rem;
-  width: 100%; }
-
 /*
 ||============================================================================||
 ||                              F O N T S                                     ||
@@ -53,26 +33,26 @@ body {
 .heading-1 {
   font-family: "Cinzel", serif;
   font-size: 5rem;
-  text-shadow: 0.25rem 0.25rem 0.1rem rgba(0, 0, 0, 0.4); }
+  text-shadow: 0.25rem 0.25rem rgba(0, 0, 0, 0.4); }
 
 .heading-2 {
   font-family: "Cinzel", serif;
   font-size: 3.7rem;
   letter-spacing: .4rem;
   font-weight: 700;
-  text-shadow: 0.2rem 0.25rem 0.3rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
 
 .heading-3 {
   font-family: "Cinzel", serif;
   font-size: 2rem;
   font-weight: 700;
-  text-shadow: 0.2rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
 
 .heading-4 {
   font-family: "Cinzel", serif;
   font-size: 1.75rem;
   font-weight: 700;
-  text-shadow: 0.2rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
 
 .heading-5 {
   font-family: "Cinzel", serif; }
@@ -510,7 +490,7 @@ body {
       margin-right: 1.5rem; }
   .footer__link:visited, .footer__link:link {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     display: inline-block; }
     .footer__link:visited:active, .footer__link:visited:hover, .footer__link:link:active, .footer__link:link:hover {
       color: #339933;
@@ -535,9 +515,10 @@ body {
   .header__title--name {
     font-weight: 400;
     font-size: 4.4rem;
-    letter-spacing: .7rem;
+    letter-spacing: .55rem;
     display: block;
-    border-bottom: 1px #ffffff solid; }
+    border-bottom: 1px #ffffff solid;
+    box-shadow: 0 0.2rem rgba(0, 0, 0, 0.4); }
   .header__title--date {
     font-weight: 400;
     letter-spacing: .4rem;
@@ -746,6 +727,24 @@ body {
   width: 10rem !important;
   height: 5rem; }
 
+.registry__link {
+  display: block;
+  border: 2px solid black;
+  margin: 5rem auto;
+  height: 20rem;
+  width: 90%;
+  border-radius: 10rem;
+  box-shadow: 1rem 1rem 2rem black;
+  cursor: pointer;
+  background-color: #fff;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .registry__link-amazon {
+    background-image: url("../img/amazon.png"); }
+  .registry__link-target {
+    background-image: url("../img/target.png"); }
+
 .row {
   max-width: 120rem;
   margin: 0 auto; }
@@ -791,3 +790,6 @@ body {
   margin: 20rem 0; }
   .section-wedding-party .heading-2 {
     color: #d19765e8; }
+
+.section-registry {
+  margin: 15rem 0; }

@@ -21,9 +21,10 @@
     &__title--name{
         font-weight: 400;
         font-size: 4.4rem;
-        letter-spacing: .7rem;
+        letter-spacing: .55rem;
         display: block;
         border-bottom: 1px $color-white solid;
+        box-shadow: 0 .2rem rgba($color-black, .4);
     }
     &__title--date{
         font-weight: 400;

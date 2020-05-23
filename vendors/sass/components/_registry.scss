@@ -1,0 +1,24 @@
+.registry{
+    &__link{
+        display:block;
+        border: 2px solid black;
+        margin: 5rem auto;
+        height: 20rem;
+        width: 90%;
+        border-radius: 10rem;
+        box-shadow: 1rem 1rem 2rem black;
+        cursor: pointer;
+        background-color:#fff;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &-amazon{
+            background-image: url("../img/amazon.png");
+        }
+        &-target{
+            background-image: url("../img/target.png");
+        }
+
+    }
+}

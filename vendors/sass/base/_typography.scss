@@ -19,26 +19,26 @@ body{
 .heading-1{
     font-family: $font-family-serif;
     font-size: 5rem;
-    text-shadow: .25rem .25rem .1rem rgba($color-black, .4);
+    text-shadow: .25rem .25rem  rgba($color-black, .4);
 }
 .heading-2{
     font-family: $font-family-serif;
     font-size: 3.7rem;
     letter-spacing: .4rem;
     font-weight: 700;
-    text-shadow: .2rem .25rem .3rem rgba($color-black, .25);
+    text-shadow: .2rem .2rem rgba($color-black, .2);
 }
 .heading-3{
     font-family: $font-family-serif;
     font-size: 2rem;
     font-weight: 700;
-    text-shadow: .2rem .25rem .25rem rgba($color-black, .25);
+    text-shadow: .2rem .2rem rgba($color-black, .2);
 }
 .heading-4{
     font-family: $font-family-serif;
     font-size: 1.75rem;
     font-weight: 700;
-    text-shadow: .2rem .25rem .25rem rgba($color-black, .25);
+    text-shadow: .1rem .1rem rgba($color-black, .2);
 }
 .heading-5{
     font-family: $font-family-serif;
