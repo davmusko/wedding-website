@@ -2,6 +2,7 @@ Final version of David and Jelena's wedding website. This design was taken from 
 
 Credit:
 Design: Jonas Schmedtmann,
+Owl Carousel: Adil Ahmed,
 Icons: 'Dove' - Designed by "Freepik" at "https://www.flaticon.com/authors/freepik",
 Fonts: 'Cinzel' Designed by Natanael Gama at "https://fonts.google.com/specimen/Cinzel?query=cin",
         'Raleway' at "https://fonts.google.com/specimen/Raleway?query=r"
