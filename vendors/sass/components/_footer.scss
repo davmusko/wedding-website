@@ -1,13 +1,17 @@
 .footer{
     background-color: $color-grey-dark-4;
     font-size: 1.25rem;
-    padding-bottom: 5rem;
+    padding: 0 3rem 5rem 3rem;
+    @include respond(tab-port) {
+        padding: 8rem 0;
+       }
     // -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
     // clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
 
     &__logo-box{
         text-align: center;
         padding: 5rem 0;
+
     }
     &__logo{
         height: auto;
@@ -15,6 +19,10 @@
     }
     &__nav{
         display: inline-block;
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+           }
 
     }
     &__nav, &__copyright{

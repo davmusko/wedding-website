@@ -1,8 +1,12 @@
 .registry{
+    &__heading{
+        padding-bottom: 8rem;
+        text-align: center;
+    }
     &__link{
         display:block;
         border: 2px solid black;
-        margin: 5rem auto;
+        margin: 0 auto;
         height: 20rem;
         width: 90%;
         border-radius: 10rem;

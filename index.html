@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -21,7 +21,7 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+    /> -->
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -41,7 +41,6 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="resources/css/style.css" />
-    <link rel="stylesheet" href="resources/css/car.css" />
     <title>Return to Love | 9.18.2020</title>
   </head>
   <body>
@@ -145,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section class="section-wedding-party" id="wedding-party">
+      <!-- <section class="section-wedding-party" id="wedding-party">
         <div class="text-center">
             <h2 class="heading-2">
               The Wedding Party
@@ -279,7 +278,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="section-events">
         <div class="row">
           <div class="event event--ceremony" id="ceremony">
@@ -316,6 +315,7 @@
             </div>
           </div>
         </div>
+        <hr>
         <div class="row">
           <div class="event event--reception" id="reception">
             <div class="event__info">
@@ -351,14 +351,26 @@
         </div>
       </section>
       <section class="section-registry">
-        <div class="text-center">
-            <h2 class="heading-2" id="registry">
-              Gift Registry
-            </h2>
+        <div class="registry__heading">
+          <h2 class="heading-2" id="registry">
+            Gift Registry
+          </h2>
         </div>
         <div class="row">
-            <div class="col-1-2"><a class="registry__link registry__link-amazon" href="https://www.amazon.com/wedding/registry/290F8RI5WFY7S?ref=wr_search_page_result_1" target="_blank"></a></div>
-            <div class="col-1-2"><a class="registry__link registry__link-target" href="https://www.target.com/gift-registry/giftgiver?registryId=40bd95879db8402fb1f9d97dc870c408&type=WEDDING" target="_blank"></a></div>
+          <div class="col-1-2">
+            <a
+              class="registry__link registry__link-amazon"
+              href="https://www.amazon.com/wedding/registry/290F8RI5WFY7S?ref=wr_search_page_result_1"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="col-1-2">
+            <a
+              class="registry__link registry__link-target"
+              href="https://www.target.com/gift-registry/giftgiver?registryId=40bd95879db8402fb1f9d97dc870c408&type=WEDDING"
+              target="_blank"
+            ></a>
+          </div>
         </div>
       </section>
     </main>
@@ -367,6 +379,30 @@
         <img class="footer__logo" src="resources\img\dove.png" alt="Dove" />
       </div>
       <div class="row">
+        <div class="col-1-2">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Home</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#couple">The Couple</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#wedding-party">Wedding Party</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#ceremony">Ceremony</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#reception">Reception</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#registry">Registry</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="col-1-2">
           <p class="footer__copyright">
             Copyright &copy;David Musko 2020.<br />
@@ -396,39 +432,17 @@
             Fonts:
             <a
               href="https://fonts.google.com/specimen/Cinzel?query=cin"
-              class="footer__link" target="_blank"
+              class="footer__link"
+              target="_blank"
               >'Cinzel' by Natanael Gama</a
             >,
             <a
               href="https://fonts.google.com/specimen/Raleway?query=r"
-              class="footer__link" target="_blank"
+              class="footer__link"
+              target="_blank"
               >'Raleway'</a
             >
           </p>
-        </div>
-        <div class="col-1-2">
-          <div class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__link" href="#">Home</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#couple">The Couple</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#wedding-party">Wedding Party</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#ceremony">Ceremony</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#reception">Reception</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__link" href="#registry">Registry</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </footer>

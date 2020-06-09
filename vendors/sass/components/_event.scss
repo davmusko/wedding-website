@@ -1,67 +1,91 @@
-.event{
-    //height: 50rem; //TEST
-    padding: 4rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 1rem;
-    box-shadow: 1rem 2rem 4rem rgba($color-black, .4);
+.event {
+  //height: 50rem; //TEST
+  padding: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 1rem;
+  box-shadow: 1rem 2rem 4rem rgba($color-black, 0.4);
 
-    &--ceremony{
-        margin-bottom: 15rem;
-        background-image: linear-gradient(100deg,
-                                        rgba($color-white, .85) 0%,
-                                        rgba($color-white, .85) 50%,
-                                        rgba($color-white,.3) 50%),
-                                    url(../img/church.jpg);
+  &--ceremony {
+    background-image: linear-gradient(
+        100deg,
+        rgba($color-white, 0.85) 0%,
+        rgba($color-white, 0.85) 50%,
+        rgba($color-white, 0.3) 50%
+      ),
+      url(../img/church.jpg);
+    @include respond(phone) {
+      background-image: linear-gradient(
+          100deg,
+          rgba($color-white, 0.8) 0%,
+          rgba($color-white, 0.8) 100%
+        ),
+        url(../img/church.jpg);
     }
+  }
 
-    &--reception{
-        background-image: linear-gradient(100deg,
-                                        rgba($color-white, .85) 0%,
-                                        rgba($color-white, .85) 50%,
-                                        rgba($color-white,.3) 50%),
-                                    url(../img/golfclub.jpg);
+  &--reception {
+    background-image: linear-gradient(
+        100deg,
+        rgba($color-white, 0.85) 0%,
+        rgba($color-white, 0.85) 50%,
+        rgba($color-white, 0.3) 50%
+      ),
+      url(../img/golfclub.jpg);
+    @include respond(phone) {
+      background-image: linear-gradient(
+          100deg,
+          rgba($color-white, 0.8) 0%,
+          rgba($color-white, 0.8) 100%
+        ),
+        url(../img/golfclub.jpg);
     }
+  }
 
-    &__info{
-        width: 45%;
-        text-align: center;
+  &__info {
+    width: 45%;
+    text-align: center;
+    @include respond(phone) {
+      width: 100%;
     }
+  }
 
-    &__body{
-        text-align: center;
-        padding: 1.5rem;
-    }
-    // &__date{
-    //     //
-    // }
-    &__address{
-        ul{
-            padding-top: 2rem;
-            text-align: center;
-            list-style-type: none;
-            font-size: 1.7rem;
+  &__body {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  // &__date{
+  //     //
+  // }
+  &__address {
+    ul {
+      padding-top: 2rem;
+      text-align: center;
+      list-style-type: none;
+      font-size: 1.7rem;
 
-            li{
-                padding: 0.5rem 1rem .2rem 1rem;
-                font-weight: 500;
-                &:not(:last-child){
-                    border-bottom: 1px solid rgba($color-grey-dark-3, .2);
-                    padding-bottom: 1rem;
-                }
-                &:not(:first-child){
-                    padding-top: 1rem;
-                }
-            }
+      li {
+        padding: 0.5rem 1rem 0.2rem 1rem;
+        font-weight: 500;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($color-grey-dark-3, 0.2);
+          padding-bottom: 1rem;
         }
-        & div{
-            margin-top: 3rem;
-            width: 49%;
-            display: inline-block;
+        &:not(:first-child) {
+          padding-top: 1rem;
         }
-        & a.btn-text{
-            margin: 0 auto;
-        }
+      }
     }
+    & div {
+      margin-top: 3rem;
+      width: 49%;
+      display: inline-block;
+    }
+    & a.btn-text {
+      margin: 0 auto;
+    }
+  }
+
 }

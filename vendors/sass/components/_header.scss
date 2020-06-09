@@ -1,39 +1,45 @@
-.header{
-    position: relative;
-    height: 98vh;
-    background-image: linear-gradient(
-        to right bottom,
-        $color-primary+cc,
-        $color-primary-light+cc);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh,0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh,0 100%);
-
-    &__text-box{
-        text-align: center;
-        color:$color-white;
-        position:absolute;
-        top: 40%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        text-shadow: .25rem .5rem .6rem rgba($color-black, .4);
-
+.header {
+  position: relative;
+  height: 98vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary + cc,
+    $color-primary-light + cc
+  );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  @include respond(tab-port) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+  &__text-box {
+    text-align: center;
+    color: $color-white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.25rem 0.5rem 0.6rem rgba($color-black, 0.4);
+  }
+  &__title--name {
+    font-weight: 400;
+    font-size: 4.4rem;
+    letter-spacing: 0.55rem;
+    display: block;
+    border-bottom: 1px $color-white solid;
+    box-shadow: 0 0.2rem rgba($color-black, 0.4);
+  }
+  &__title--date {
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    display: block;
+    font-size: 4rem;
+    & .super {
+      font-size: 2rem;
     }
-    &__title--name{
-        font-weight: 400;
-        font-size: 4.4rem;
-        letter-spacing: .55rem;
-        display: block;
-        border-bottom: 1px $color-white solid;
-        box-shadow: 0 .2rem rgba($color-black, .4);
-    }
-    &__title--date{
-        font-weight: 400;
-        letter-spacing: .4rem;
-        display: block;
-        font-size: 4rem;
-        & .super{
-            font-size: 2rem;
-        }
-    }
-
+  }
 }

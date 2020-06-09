@@ -33,12 +33,21 @@
     z-index: 10;
     box-shadow: 0.5rem 1rem 2.5rem rgba($color-black, 0.6);
     cursor: pointer;
-    transition: all .2s;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__btn:hover,
-  &__checkbox:checked ~ &__btn{
+  &__checkbox:checked ~ &__btn {
     top: 2rem;
-    box-shadow: 0.5rem 1.5rem 3rem rgba($color-black, .5);
+    box-shadow: 0.5rem 1.5rem 3rem rgba($color-black, 0.5);
   }
   &__icon {
     position: relative;
@@ -82,6 +91,15 @@
     z-index: 5;
     background-image: radial-gradient($color-primary-light, $color-primary);
     transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+    @include respond(tab-port) {
+      top: 6.25rem;
+      right: 5.75rem;
+    }
+    @include respond(phone) {
+      top: 5rem;
+      right: 5rem;
+    }
   }
   &__nav-box {
     position: fixed;
