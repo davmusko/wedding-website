@@ -1,9 +1,9 @@
 .section-events {
-  padding: 15rem 0;
+  padding: 15rem 3rem;
   background-image: linear-gradient(
-    to right bottom,
+    to right top,
     $color-primary + cc,
-    $color-primary + cc
+    $color-secondary-white + cc
   );
   transform: skewY(-3.75deg);
 
@@ -11,25 +11,32 @@
     transform: skewY(3.75deg);
   }
 
+
   & hr {
     margin: 6rem auto 6rem auto;
     border: none;
     border-top: dotted 2rem;
-    width: 20%;
+    width: 15%;
     opacity: 0.75;
     @include respond(tab-port) {
         margin: 3.5rem auto 3.5rem auto;
       }
   }
   @include respond(tab-port) {
-    padding: 7rem 0;
+    padding: 10rem 0;
   }
 }
 .section-wedding-party {
   transform: skewY(-3.75deg);
   margin:20rem 0;
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary + cc,
+    $color-secondary-white + cc
+  );
   & .heading-2{
-      color:#d19765e8;
+      color:#343434;
   }
   & > * {
     transform: skewY(3.75deg);
@@ -47,5 +54,6 @@
         padding: 8rem 0;
       }
 }
+
 
 

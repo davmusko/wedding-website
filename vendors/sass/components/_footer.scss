@@ -1,58 +1,68 @@
-.footer{
-    background-color: $color-grey-dark-4;
-    font-size: 1.25rem;
-    padding: 0 3rem 5rem 3rem;
+.footer {
+  background-color: $color-grey-dark-4;
+  font-size: 1.25rem;
+  padding: 0 3rem 3rem 3rem;
+
+
+//   @include respond(tab-land) {
+//     background-color: blue;
+//   }
+//   @include respond(tab-port) {
+//     padding: 3rem;
+//     background-color: red;
+//   }
+
+//   @include respond(phone) {
+//     background-color: green;
+//   }
+  // -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
+  // clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
+
+  &__logo-box {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  &__logo {
+    height: auto;
+    width: 10rem;
+  }
+  &__nav {
+    display: inline-block;
     @include respond(tab-port) {
-        padding: 8rem 0;
-       }
-    // -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
-    // clip-path: polygon(0 15%, 100% 0, 100% 100%,0 100%);
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__nav,
+  &__copyright {
+    border-top: 0.1rem $color-primary-white solid;
+    padding-top: 2rem;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__list-item {
+    color: $color-primary-white;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    &:visited,
+    &:link {
+      color: inherit;
+      text-decoration: underline;
+      display: inline-block;
 
-    &__logo-box{
-        text-align: center;
-        padding: 5rem 0;
-
+      &:active,
+      &:hover {
+        color: $color-primary;
+        text-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      }
     }
-    &__logo{
-        height: auto;
-        width: 10rem;
-    }
-    &__nav{
-        display: inline-block;
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-           }
-
-    }
-    &__nav, &__copyright{
-        border-top: .1rem $color-primary-white solid;
-        padding-top: 2rem;
-    }
-    &__list{
-        list-style: none;
-    }
-    &__list-item{
-        color: $color-primary-white;
-        display: inline-block;
-        &:not(:last-child){
-            margin-right: 1.5rem;
-        }
-    }
-    &__link{
-        &:visited,&:link{
-            color: inherit;
-            text-decoration: underline;
-            display: inline-block;
-
-            &:active, &:hover{
-                color: $color-primary;
-                text-shadow: 0 1rem 2rem rgba($color-black, .4);
-            }
-        }
-    }
-    &__copyright{
-        color: $color-primary-white;
-    }
-
+  }
+  &__copyright {
+    color: $color-primary-white;
+  }
 }

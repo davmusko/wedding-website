@@ -4,18 +4,28 @@
         text-align: center;
     }
     &__link{
-        display:block;
-        border: 2px solid black;
-        margin: 0 auto;
-        height: 20rem;
-        width: 90%;
-        border-radius: 10rem;
-        box-shadow: 1rem 1rem 2rem black;
-        cursor: pointer;
-        background-color:#fff;
-        background-size: 75%;
-        background-repeat: no-repeat;
-        background-position: center;
+
+        &:link, &:visited{
+            display:block;
+            border: 2px solid black;
+            margin: 0 auto;
+            height: 17rem;
+            width: 90%;
+            border-radius: 10rem;
+            box-shadow: 0 1rem 2rem rgba($color-black, .5);
+            cursor: pointer;
+            background-color:rgb(238, 238, 238);
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: .2s;
+            &:hover, &:active{
+
+             background-color: #fff;
+             box-shadow: 0 1rem 3rem rgba($color-black, .5);
+             transform: scale(1.05);
+            }
+        }
 
         &-amazon{
             background-image: url("../img/amazon.png");

@@ -1,41 +1,46 @@
 .owl-carousel {
   & .testimonial {
-    background: #fff;
+    background: $color-grey-light-2;
     text-align: center;
     padding: 3rem 3rem 5rem;
     margin: 0 1.5rem 10rem;
     position: relative;
     margin-top: 6rem;
-    border: 1px #bd986b98 dotted;
     border-top-left-radius: 1rem;
-    box-shadow: .5rem -.5rem 2rem rgba($color-black, .2);
     border-top-right-radius: 1rem;
 
     &::before,
     &::after {
       content: "";
-      border-top: 4rem solid #fff;
+      border-top: 4rem solid $color-grey-light-2;
       border-right: 12.5rem solid transparent;
       position: absolute;
-      bottom: -4rem;
+      bottom: -3.9rem;
       left: 0;
+      @include respond(phone) {
+        border-right: 17rem solid transparent;
+      }
     }
     &::after {
       border-right: none;
       border-left: 12.5rem solid transparent;
       left: auto;
       right: 0;
+
+      @include respond(phone) {
+        border-left: 17rem solid transparent;
+      }
     }
     & .icon {
       display: inline-block;
       font-size: 8rem;
-      color: #bd986b;
+      color: #343434;
       margin-bottom: 2rem;
       opacity: 0.6;
     }
     & .description {
       font-size: 1.6rem;
-      color: #777;
+      color: #343434;
       text-align: justify;
       margin-bottom: 3rem;
       opacity: 0.9;
@@ -48,49 +53,57 @@
     }
     & .pic {
       display: inline-block;
-      border: 0.6rem solid white;
+      border: 0.6rem solid $color-grey-light-2;
       border-radius: 50%;
-      box-shadow: 0 0 2px 2px #daad86;
+      box-shadow: 0 0 2px 2px #343434;
       overflow: hidden;
       z-index: 1;
       position: relative;
+      transform: translateY(-2.25rem);
       & img {
         width: 100%;
         height: auto;
       }
     }
     & .title {
-      font-size: 1.7rem;
+      font-size: 2rem;
       font-weight: 600;
-      color: #daad86;
-      margin: 0 0 0.5rem 0;
+      color: #343434;
+      margin: -2rem 0 0.2rem 0;
+      display: block;
     }
     & .post {
-        font-weight: 500;
+      margin-top: 0.5rem;
+      font-weight: 500;
       display: block;
-      font-size: 1.4rem;
-      color: #daad86;
+      font-size: 1.7rem;
+      color: #343434;
     }
   }
 }
 .owl-theme .owl-controls {
-  margin-top: 6rem;
+  margin-top: 3rem;
   & .owl-page span {
-    width: 3.2rem;
-    height: 1rem;
-    background: #fff;
-    border: 2px solid #bd986b;
-    margin: 0.5rem;
-    opacity: 1;
-    box-shadow: .1rem .25rem 1rem rgba($color-black, .5);
+    width: 6.4rem;
+    height: 2rem;
+    background: $color-grey-light-2;
+    border: 2px solid #343434;
+    margin: 0 2rem;
+    opacity: 0.6;
+    box-shadow: 0.1rem 0.25rem 1rem rgba($color-black, 0.5);
+    @include respond(phone) {
+      width: 4.8rem;
+      height: 1.5rem;
+      margin: 0 .5rem;
+    }
   }
   & .owl-page.active span,
   &.clickable .owl-page:hover span {
-    background: #ffd9b8;
-    border-color: #fff;
+    background: #343434;
+    border-color: $color-grey-light-2;
   }
 }
 .pic img {
-    width: 10rem !important;
-    height: 5rem;
-  }
+  width: 10rem !important;
+  height: 5rem;
+}
