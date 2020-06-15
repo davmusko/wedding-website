@@ -22,8 +22,13 @@
     transition: all 0.5s 0.3s;
   }
   &__map {
-    height: 90vh;
-    width: 80vw;
+    height: 85vh;
+    width: 85vw;
+
+    @include respond(phone) {
+      height: 75vh;
+      width: 75vw;
+    }
   }
   &:target {
     opacity: 1;
