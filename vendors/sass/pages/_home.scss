@@ -29,12 +29,14 @@
 .section-wedding-party {
   transform: skewY(-3.75deg);
   margin:20rem 0;
-  padding: 15rem 0;
+  padding: 13rem 0;
   background-image: linear-gradient(
     to right bottom,
     $color-primary + cc,
-    $color-secondary-white + cc
-  );
+    $color-secondary-white + cc);
+    @include respond(tab-port) {
+        padding: 5rem 0;
+      }
   & .heading-2{
       color:#343434;
   }
@@ -43,17 +45,59 @@
   }
 }
 .section-couple{
-    padding: 10rem 0;
+    padding: 6rem 0;
     @include respond(tab-port) {
         padding: 3rem 0;
       }
 }
 .section-registry{
-    padding: 11rem 0;
+    padding: 10rem 15rem 15rem;
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 10rem 0;
       }
 }
 
 
+/*
+||============================================================================||
+||                    Nav bar link landing position spacing                   ||
+||============================================================================||
+*/
+
+#couple{
+    position: absolute;
+    top: -5rem;
+}
+#wedding-party{
+    position: absolute;
+    top: -2rem;
+    @include respond(tab-port){
+        top: -5rem;
+    }
+}
+#ceremony{
+    position: absolute;
+    top: -6rem;
+    @include respond(tab-port){
+        top: -8rem;
+    }
+}
+#reception {
+    position: absolute;
+    top: -6rem;
+    @include respond(tab-port){
+        top: -8rem;
+    }
+}
+#registry{
+    position: absolute;
+    top: -10rem;
+}
+
+
+[class^="section"]{
+    & .heading-2{
+        position: relative;
+    }
+}
 

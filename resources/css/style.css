@@ -451,20 +451,21 @@ body {
 
 .btn-text {
   font-size: 1.6rem;
-  font-weight: 900;
-  letter-spacing: .25rem;
-  padding: .3rem 2rem;
-  border-radius: 3px; }
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  padding: 0.3rem 2rem;
+  border-radius: 5px; }
   .btn-text:link, .btn-text:visited {
     text-decoration: none;
     color: #343434;
     display: inline-block;
-    border: 1px solid #343434;
-    transition: all .2s; }
+    font-size: 2rem;
+    border: 2px solid #343434;
+    transition: all 0.2s; }
   .btn-text:hover {
-    font-weight: 700;
+    font-weight: 900;
     background-color: #343434;
-    color: #CCE5D9;
+    color: #eeeeee;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     transform: scale(1.15); }
   .btn-text:active {
@@ -560,16 +561,16 @@ body {
   position: relative;
   height: 100vh;
   background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
   @media (max-width: 62em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); } }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%); } }
   .header__text-box {
     text-align: center;
     color: #ffffff;
@@ -729,11 +730,59 @@ body {
   transform: translateX(1rem);
   color: #a7878f; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.3s; }
+  .popup__map {
+    height: 90vh;
+    width: 80vw; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    display: inline-block;
+    transition: all 0.2s;
+    font-size: 4rem;
+    color: #555555;
+    line-height: 0.7;
+    background-color: rgba(0, 0, 0, 0); }
+  .popup__close:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.2); }
+
 .owl-carousel .testimonial {
   background: #eeeeee;
   text-align: center;
   padding: 3rem 3rem 5rem;
   margin: 0 1.5rem 10rem;
+  margin-top: 4rem !important;
   position: relative;
   margin-top: 6rem;
   border-top-left-radius: 1rem;
@@ -824,7 +873,8 @@ body {
 
 .registry__heading {
   padding-bottom: 8rem;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .registry__link:link, .registry__link:visited {
   display: block;
@@ -917,21 +967,61 @@ body {
 .section-wedding-party {
   transform: skewY(-3.75deg);
   margin: 20rem 0;
-  padding: 15rem 0;
+  padding: 13rem 0;
   background-image: linear-gradient(to right bottom, #a7878fcc, #E5CCD9cc); }
+  @media (max-width: 62em) {
+    .section-wedding-party {
+      padding: 5rem 0; } }
   .section-wedding-party .heading-2 {
     color: #343434; }
   .section-wedding-party > * {
     transform: skewY(3.75deg); }
 
 .section-couple {
-  padding: 10rem 0; }
+  padding: 6rem 0; }
   @media (max-width: 62em) {
     .section-couple {
       padding: 3rem 0; } }
 
 .section-registry {
-  padding: 11rem 0; }
+  padding: 10rem 15rem 15rem; }
   @media (max-width: 62em) {
     .section-registry {
-      padding: 8rem 0; } }
+      padding: 10rem 0; } }
+
+/*
+||============================================================================||
+||                    Nav bar link landing position spacing                   ||
+||============================================================================||
+*/
+#couple {
+  position: absolute;
+  top: -5rem; }
+
+#wedding-party {
+  position: absolute;
+  top: -2rem; }
+  @media (max-width: 62em) {
+    #wedding-party {
+      top: -5rem; } }
+
+#ceremony {
+  position: absolute;
+  top: -6rem; }
+  @media (max-width: 62em) {
+    #ceremony {
+      top: -8rem; } }
+
+#reception {
+  position: absolute;
+  top: -6rem; }
+  @media (max-width: 62em) {
+    #reception {
+      top: -8rem; } }
+
+#registry {
+  position: absolute;
+  top: -10rem; }
+
+[class^="section"] .heading-2 {
+  position: relative; }

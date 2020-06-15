@@ -89,12 +89,9 @@
       </div>
     </header>
     <main>
-
-      <section class="section-couple" id="couple">
+      <section class="section-couple">
         <div class="text-center">
-          <h2 class="heading-2">
-            Meet the Couple
-          </h2>
+          <h2 class="heading-2">Meet the Couple <span id="couple"></span></h2>
           <h3 class="heading-3">
             -David & Jelena-
           </h3>
@@ -147,8 +144,8 @@
       </section>
       <section class="section-wedding-party">
         <div class="text-center">
-          <h2 class="heading-2" id="wedding-party">
-            The Wedding Party
+          <h2 class="heading-2">
+            The Wedding Party <span id="wedding-party"></span>
           </h2>
         </div>
         <div class="container">
@@ -293,10 +290,7 @@
                   </p>
                   <div class="testimonial-content">
                     <div class="pic">
-                      <img
-                        src="resources/img/chris.png"
-                        alt="Chris Maier"
-                      />
+                      <img src="resources/img/chris.png" alt="Chris Maier" />
                     </div>
                     <h3 class="title">
                       Chris Maier<span class="post">Best Man</span>
@@ -314,10 +308,7 @@
                   </p>
                   <div class="testimonial-content">
                     <div class="pic">
-                      <img
-                        src="resources/img/ryan.jpg"
-                        alt="Ryan Jaworski"
-                      />
+                      <img src="resources/img/ryan.jpg" alt="Ryan Jaworski" />
                     </div>
                     <h3 class="title">
                       Ryan Jaworski<span class="post">Groomsman</span>
@@ -367,26 +358,23 @@
                   </div>
                 </div>
                 <div class="testimonial">
-                    <span class="icon fa fa-quote-right"></span>
-                    <p class="description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam justo neque, aliquet sit amet elementum vel, vehicula
-                      eget eros. Vivamus arcu metus, mattis sed sagittis at,
-                      sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed
-                      sagittis at, sagittis quis neque. Praesent.
-                    </p>
-                    <div class="testimonial-content">
-                      <div class="pic">
-                        <img
-                          src="resources/img/matt.jpg"
-                          alt="Matthew Pierce"
-                        />
-                      </div>
-                      <h3 class="title">
-                        Matthew Pierce<span class="post">Groomsman</span>
-                      </h3>
+                  <span class="icon fa fa-quote-right"></span>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam justo neque, aliquet sit amet elementum vel, vehicula
+                    eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                    sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed
+                    sagittis at, sagittis quis neque. Praesent.
+                  </p>
+                  <div class="testimonial-content">
+                    <div class="pic">
+                      <img src="resources/img/matt.jpg" alt="Matthew Pierce" />
                     </div>
+                    <h3 class="title">
+                      Matthew Pierce<span class="post">Groomsman</span>
+                    </h3>
                   </div>
+                </div>
                 <div class="testimonial">
                   <span class="icon fa fa-quote-right"></span>
                   <p class="description">
@@ -398,17 +386,13 @@
                   </p>
                   <div class="testimonial-content">
                     <div class="pic">
-                      <img
-                        src="resources/img/batman.jpg"
-                        alt="David Musko"
-                      />
+                      <img src="resources/img/batman.jpg" alt="David Musko" />
                     </div>
                     <h3 class="title">
                       David Musko<span class="post">Groomsman</span>
                     </h3>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -416,7 +400,8 @@
       </section>
       <section class="section-events">
         <div class="row">
-          <div class="event event--ceremony" id="ceremony">
+          <span id="ceremony"></span>
+          <div class="event event--ceremony">
             <div class="event__info">
               <div class="event__title">
                 <h2 class="heading-2">Ceremony</h2>
@@ -441,10 +426,14 @@
                       class="btn-text"
                       href="https://www.sacredheartgr.org/"
                       target="_blank"
-                      >Visit &rarr;</a
-                    >
+                      >Visit <i class="fa fa-external-link"></i
+                    ></a>
                   </div>
-                  <div><a class="btn-text" href="#">Map</a></div>
+                  <div>
+                    <a class="btn-text" href="#popup-ceremony"
+                      >Map <i class="fa fa-map-marker"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -452,7 +441,8 @@
         </div>
         <hr />
         <div class="row">
-          <div class="event event--reception" id="reception">
+          <span id="reception"></span>
+          <div class="event event--reception">
             <div class="event__info">
               <div class="event__title">
                 <h2 class="heading-2">Reception</h2>
@@ -475,10 +465,14 @@
                       class="btn-text"
                       href="https://macatawagc.com/"
                       target="_blank"
-                      >Visit &rarr;</a
-                    >
+                      >Visit <i class="fa fa-external-link"></i
+                    ></a>
                   </div>
-                  <div><a class="btn-text" href="#">Map</a></div>
+                  <div>
+                    <a class="btn-text" href="#popup-reception"
+                      >Map <i class="fa fa-map-marker"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -487,9 +481,7 @@
       </section>
       <section class="section-registry">
         <div class="registry__heading">
-          <h2 class="heading-2" id="registry">
-            Gift Registry
-          </h2>
+          <h2 class="heading-2">Gift Registry<span id="registry"></span></h2>
         </div>
         <div class="row">
           <div class="col-1-2">
@@ -515,45 +507,77 @@
       </div>
       <div class="row">
         <div class="col-1-2">
-            <div class="footer__nav">
-              <ul class="footer__list">
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#">Home</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#couple">The Couple</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#wedding-party">Wedding Party</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#ceremony">Ceremony</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#reception">Reception</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__link" href="#registry">Registry</a>
-                </li>
-              </ul>
-            </div>
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Home</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#couple">The Couple</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#wedding-party">Wedding Party</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#ceremony">Ceremony</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#reception">Reception</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#registry">Registry</a>
+              </li>
+            </ul>
           </div>
+        </div>
         <div class="col-1-2">
-            <p class="footer__copyright">
-              Copyright &copy;David Musko 2020.<br />
-              You may use this website for products and projects - commercial or
-              otherwise.<br />
-              Based on a design by
-              <a
-                href="https://codingheroes.io/"
-                class="footer__link"
-                target="_blank"
-                >Jonas Schmedtmann.</a
-              >
-            </p>
-          </div>
+          <p class="footer__copyright">
+            Copyright &copy;David Musko 2020.<br />
+            You may use this website for products and projects - commercial or
+            otherwise.<br />
+            Based on a design by
+            <a
+              href="https://codingheroes.io/"
+              class="footer__link"
+              target="_blank"
+              >Jonas Schmedtmann.</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
+    <div class="popup" id="popup-ceremony">
+      <div class="popup__content">
+        <a href="#ceremony" class="popup__close"
+          ><i class="fa fa-window-close-o popup__close-icon"></i
+        ></a>
+        <iframe
+          class="popup__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23358.883892783586!2d-85.71268808185611!3d42.960144355017974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819ae64b6927101%3A0xcb7937aace1a9818!2sSacred%20Heart%20of%20Jesus%20Church!5e0!3m2!1sen!2sus!4v1592173708270!5m2!1sen!2sus"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    <div class="popup" id="popup-reception">
+      <div class="popup__content">
+        <a href="#reception" class="popup__close"
+          ><i class="fa fa-window-close-o popup__close-icon"></i
+        ></a>
+        <iframe
+          class="popup__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19677.73313815835!2d-86.14073518356938!3d42.84935699108814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88198db1631330ab%3A0x676b807b4019bf0e!2s4600%20Macatawa%20Legends%20Blvd%2C%20Holland%2C%20MI%2049424!5e0!3m2!1sen!2sus!4v1592181278537!5m2!1sen!2sus"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.0.min.js"

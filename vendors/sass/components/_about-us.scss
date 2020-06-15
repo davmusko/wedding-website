@@ -32,6 +32,11 @@
     line-height: 2;
     letter-spacing: 0.007rem;
     font-weight: 500;
+
+    // -moz-hyphens: auto;
+    // -ms-hyphens: auto;
+    // -webkit-hyphens: auto;
+    // hyphens: auto;
   }
   &__paragraph {
     &-1 p {
