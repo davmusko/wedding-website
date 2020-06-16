@@ -22,17 +22,17 @@
   }
   &__btn {
     margin: 0;
-    border: $color-primary-light 1px solid;
+    border: rgba($color-grey-light-2, 0.5) 2px solid;
     position: fixed;
     background-color: $color-white;
     width: 7rem;
     height: 7rem;
     top: 3rem;
-    right: 6rem;
+    right: 3rem;
     border-radius: 50%;
     text-align: center;
     z-index: 10;
-    box-shadow: 0.5rem 1rem 2.5rem rgba($color-black, 0.6);
+    box-shadow: 0 3px 0.7rem 5px rgba($color-black, 0.2);
     cursor: pointer;
     transition: all 0.2s;
 
@@ -41,15 +41,20 @@
       right: 4rem;
     }
     @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
+      width: 6rem;
+      height: 6rem;
+      top: 1.5rem;
+      right: 1.5rem;
     }
   }
+
   &__btn:hover,
   &__checkbox:checked ~ &__btn {
-    top: 2rem;
-    box-shadow: 0.5rem 1.5rem 3rem rgba($color-black, 0.5);
+    top: 1.5rem;
+    box-shadow: 0 1.5rem 3rem 0.5rem rgba($color-black, 0.3);
+    transform: scale(1.1);
   }
+
   &__icon {
     position: relative;
     margin-top: 50%;
@@ -60,6 +65,11 @@
       height: 2px;
       background-color: $color-grey-dark-4;
       display: inline-block;
+
+      @include respond(phone) {
+        width: 2.5rem;
+        height: 1px;
+      }
     }
 
     &::after,
@@ -71,9 +81,15 @@
     }
     &::before {
       top: -0.8rem;
+      @include respond(phone) {
+        top: -0.65rem;
+      }
     }
     &::after {
       top: 0.8rem;
+      @include respond(phone) {
+        top: 0.65rem;
+      }
     }
   }
   &__btn:hover &__icon::before {
@@ -88,7 +104,7 @@
     border-radius: 50%;
     position: fixed;
     top: 5rem;
-    right: 8rem;
+    right: 5rem;
     z-index: 5;
     background-image: radial-gradient($color-primary-light, $color-primary);
     transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1);
@@ -98,8 +114,8 @@
       right: 5.75rem;
     }
     @include respond(phone) {
-      top: 5rem;
-      right: 5rem;
+      top: 3.5rem;
+      right: 3.5rem;
     }
   }
   &__nav-box {

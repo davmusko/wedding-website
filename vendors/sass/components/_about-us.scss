@@ -1,49 +1,125 @@
 .couple {
-  &__about-us {
-    padding: 5rem;
-    text-align: left;
-    & hr {
-      margin: 5rem auto 3rem auto;
-      border: none;
-      border-top: dotted 2rem;
-      width: 20%;
-      opacity: 0.75;
-    }
+  &__about {
+    padding: 5rem 0;
   }
   &__img {
     border: #fff 0.6rem solid;
     box-shadow: 0 0 3px 3px #343434;
     border-radius: 50%;
-    width: 25%;
+    height: 25rem;
+    width: 25rem;
+    margin: 1rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+
     &--1 {
-      transform: translateX(-3rem);
-      float: left;
+      background-image: url(../img/couple-1.png);
     }
     &--2 {
-      shape-outside: circle(50% at 50% 50%);
-      transform: translateX(3rem);
-      float: right;
+      background-image: url(../img/couple-2.png);
+
+      order: 2;
+      @include respond(phone) {
+        order: 0;
+      }
     }
   }
-  &__text p {
-    font-size: 1.6rem;
+  &__paragraph {
+    background-color: #eee;
+    text-align: justify;
+    font-size: 1.8rem;
     line-height: 2;
     letter-spacing: 0.007rem;
     font-weight: 500;
+    flex-basis: 60%;
 
-    // -moz-hyphens: auto;
-    // -ms-hyphens: auto;
-    // -webkit-hyphens: auto;
-    // hyphens: auto;
-  }
-  &__paragraph {
-    &-1 p {
-      padding: 3rem 0;
+    & span.indent {
+      margin-right: 5rem;
     }
-    &-2 p {
-      padding: 5rem 0;
+
+    @include respond(phone) {
+      flex-basis: 75%;
     }
   }
 }
+i.icon {
+  display: block;
+  text-align: center;
+}
+
+/*
+||============================================================================||
+||                                     flex                                   ||
+||============================================================================||
+*/
+
+.flex-container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/*
+||============================================================================||
+||                                     Good Code                              ||
+||============================================================================||
+*/
+
+// .couple {
+//   &__about-us {
+//     padding: 5rem;
+//     text-align: left;
+//     & hr {
+//       margin: 5rem auto 3rem auto;
+//       border: none;
+//       border-top: dotted 2rem;
+//       width: 20%;
+//       opacity: 0.75;
+//     }
+//   }
+//   &__img {
+//     border: #fff 0.6rem solid;
+//     box-shadow: 0 0 3px 3px #343434;
+//     border-radius: 50%;
+//     width: 25%;
+//     -webkit-shape-outside: circle(50% at 50% 50%);
+//     shape-outside: circle(50% at 50% 50%);
+//     &--1 {
+//       transform: translateX(-3rem);
+//       float: left;
+//     }
+//     &--2 {
+//       shape-outside: circle(50% at 50% 50%);
+//       transform: translateX(3rem);
+//       float: right;
+//     }
+//   }
+//   &__text p {
+//     font-size: 1.6rem;
+//     line-height: 2;
+//     letter-spacing: 0.007rem;
+//     font-weight: 500;
+
+//     // -moz-hyphens: auto;
+//     // -ms-hyphens: auto;
+//     // -webkit-hyphens: auto;
+//     // hyphens: auto;
+//   }
+//   &__paragraph {
+//     &-1 p {
+//       padding: 3rem 0;
+//     }
+//     &-2 p {
+//       padding: 5rem 0;
+//     }
+//   }
+// }

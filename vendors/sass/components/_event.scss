@@ -1,13 +1,16 @@
 .event {
   padding: 4rem;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 1rem;
   box-shadow: 1rem 2rem 4rem rgba($color-black, 0.4);
-//   width: 95%;
-//   margin: 0 auto;
+
+  @include respond(phone) {
+    background-attachment: local;
+  }
 
   &--ceremony {
     background-image: linear-gradient(
@@ -73,7 +76,7 @@
         padding: 0.5rem 1rem 0.2rem 1rem;
         font-weight: 500;
         &:not(:last-child) {
-          border-bottom: 1px dotted rgba($color-grey-dark-4, .3);
+          border-bottom: 1px dotted rgba($color-grey-dark-4, 0.3);
           padding-bottom: 1rem;
         }
         &:not(:first-child) {
@@ -83,12 +86,8 @@
     }
     & div {
       margin-top: 3rem;
-      width: 49%;
+      width: 45%;
       display: inline-block;
     }
-    & a.btn-text {
-      margin: 0 auto;
-    }
   }
-
 }

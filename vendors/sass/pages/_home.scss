@@ -1,3 +1,6 @@
+.header {
+  padding: 5vw 0;
+}
 .section-events {
   padding: 15rem 3rem;
   background-image: linear-gradient(
@@ -11,7 +14,6 @@
     transform: skewY(3.75deg);
   }
 
-
   & hr {
     margin: 6rem auto 6rem auto;
     border: none;
@@ -19,8 +21,8 @@
     width: 15%;
     opacity: 0.75;
     @include respond(tab-port) {
-        margin: 3.5rem auto 3.5rem auto;
-      }
+      margin: 3.5rem auto 3.5rem auto;
+    }
   }
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -28,35 +30,36 @@
 }
 .section-wedding-party {
   transform: skewY(-3.75deg);
-  margin:20rem 0;
+  margin: 15rem 0;
   padding: 13rem 0;
   background-image: linear-gradient(
     to right bottom,
     $color-primary + cc,
-    $color-secondary-white + cc);
-    @include respond(tab-port) {
-        padding: 5rem 0;
-      }
-  & .heading-2{
-      color:#343434;
+    $color-secondary-white + cc
+  );
+  @include respond(tab-port) {
+    padding: 5rem 0;
+    margin-top: 0;
+  }
+  & .heading-2 {
+    color: #343434;
   }
   & > * {
     transform: skewY(3.75deg);
   }
 }
-.section-couple{
-    padding: 6rem 0;
-    @include respond(tab-port) {
-        padding: 3rem 0;
-      }
+.section-couple {
+  padding: 10rem 0 2rem 0;
+  @include respond(tab-port) {
+    padding: 3rem 0;
+  }
 }
-.section-registry{
-    padding: 10rem 15rem 15rem;
-    @include respond(tab-port) {
-        padding: 10rem 0;
-      }
+.section-registry {
+  padding: 10rem 15rem 15rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
-
 
 /*
 ||============================================================================||
@@ -64,40 +67,38 @@
 ||============================================================================||
 */
 
-#couple{
-    position: absolute;
+#couple {
+  position: absolute;
+  top: -5rem;
+}
+#wedding-party {
+  position: absolute;
+  top: -2rem;
+  @include respond(tab-port) {
     top: -5rem;
+  }
 }
-#wedding-party{
-    position: absolute;
-    top: -2rem;
-    @include respond(tab-port){
-        top: -5rem;
-    }
-}
-#ceremony{
-    position: absolute;
-    top: -6rem;
-    @include respond(tab-port){
-        top: -8rem;
-    }
+#ceremony {
+  position: absolute;
+  top: -6rem;
+  @include respond(tab-port) {
+    top: -8rem;
+  }
 }
 #reception {
-    position: absolute;
-    top: -6rem;
-    @include respond(tab-port){
-        top: -8rem;
-    }
+  position: absolute;
+  top: -6rem;
+  @include respond(tab-port) {
+    top: -8rem;
+  }
 }
-#registry{
-    position: absolute;
-    top: -10rem;
-}
-
-
-[class^="section"]{
-    & .heading-2{
-        position: relative;
-    }
+#registry {
+  position: absolute;
+  top: -10rem;
 }
 
+[class^="section"] {
+  & .heading-2 {
+    position: relative;
+  }
+}

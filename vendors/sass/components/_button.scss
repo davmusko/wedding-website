@@ -1,9 +1,8 @@
 .btn-text {
-  font-size: $default-font-size;
-  font-weight: 700;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   padding: 0.3rem 2rem;
   border-radius: 5px;
+  margin: 0 auto;
 
   &:link,
   &:visited {
@@ -13,10 +12,11 @@
     font-size: 2rem;
     border: 2px solid #343434;
     transition: all 0.2s;
+    font-weight: 700;
   }
   &:hover {
-    font-weight: 900;
     background-color: #343434;
+    font-weight: 700;
     color: $color-grey-light-2;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
     transform: scale(1.15);
