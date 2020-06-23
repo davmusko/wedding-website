@@ -1,35 +1,4 @@
 .header {
-  position: relative;
-  height: 95vh;
-
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary + cc,
-    $color-primary-light + cc
-  );
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-  //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-  //   clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-  //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  //   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  @include respond(tab-port) {
-    height: 95vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
-  @include respond(phone) {
-    height: 95vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-    // clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-  }
   & .heading-1 {
     font-weight: 700;
     font-size: 6.5vw;
@@ -39,29 +8,30 @@
     color: white;
     line-height: 1;
     text-shadow: 1px 1px 2px black;
-    &--main {
-      margin-top: 4rem;
-    }
-    &--sub {
-      letter-spacing: 2px;
-      padding-bottom: 2rem;
-      border-bottom: 2px solid white;
-      font-size: 3vw;
-      & .super {
-        font-size: 50%;
-      }
-    }
-    // // width: 100%;
-    // text-align: center;
-    // // left: 50%;
-    // transform: translate(-50%, -50%);
-    // text-shadow: 1px 1px 2px black;
-    // &--main {
-    //   position: absolute;
-    //   top: 20%;
-    //   left: 50%;
-    // }
   }
+  &--main {
+    margin-top: 4rem;
+  }
+  &--sub {
+    letter-spacing: 2px;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid white;
+    font-size: 3vw;
+    & .super {
+      font-size: 50%;
+    }
+  }
+  // // width: 100%;
+  // text-align: center;
+  // // left: 50%;
+  // transform: translate(-50%, -50%);
+  // text-shadow: 1px 1px 2px black;
+  // &--main {
+  //   position: absolute;
+  //   top: 20%;
+  //   left: 50%;
+  // }
+
   &__prayer {
     color: white;
     margin-top: 3rem;

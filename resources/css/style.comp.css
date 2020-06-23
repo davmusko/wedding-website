@@ -995,10 +995,7 @@ i.icon {
 
 .section-events {
   padding: 15rem 3rem;
-  background-image: linear-gradient(to right top, #a7878fcc, #e5ccd9cc);
-  transform: skewY(-3.75deg); }
-  .section-events > * {
-    transform: skewY(3.75deg); }
+  background-image: linear-gradient(to right top, #a7878fcc, #e5ccd9cc); }
   .section-events hr {
     margin: 6rem auto 6rem auto;
     border: none;
@@ -1013,7 +1010,7 @@ i.icon {
       padding: 10rem 0; } }
 
 .section-wedding-party {
-  transform: skewY(-3.75deg);
+  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 50% 95%, 0 100%);
   margin: 15rem 0;
   padding: 13rem 0;
   background-image: linear-gradient(to right bottom, #a7878fcc, #e5ccd9cc); }
@@ -1023,8 +1020,6 @@ i.icon {
       margin-top: 0; } }
   .section-wedding-party .heading-2 {
     color: #343434; }
-  .section-wedding-party > * {
-    transform: skewY(3.75deg); }
 
 .section-couple {
   padding: 10rem 0 2rem 0; }

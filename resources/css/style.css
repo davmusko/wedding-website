@@ -48,12 +48,15 @@ body {
   color: #343434; }
 
 .heading-1,
-.heading-2,
+.heading-2 {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
 .heading-3,
 .heading-4,
 .heading-5,
 .heading-6 {
-  margin-block-start: 0;
+  margin-block-start: 1rem;
   margin-block-end: 0; }
 
 .heading-2 {
@@ -471,7 +474,6 @@ i.icon {
     object-position: center; }
 
 .btn-text {
-  letter-spacing: 0.2rem;
   padding: 0.3rem 2rem;
   border-radius: 5px;
   margin: 0 auto; }
@@ -495,6 +497,7 @@ i.icon {
 
 .event {
   padding: 4rem;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -579,48 +582,35 @@ i.icon {
   .footer__copyright {
     color: #cce5d9; }
 
-.header {
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%); }
-  @media (max-width: 62em) {
-    .header {
-      height: 95vh;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
-      clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); } }
-  @media (max-width: 37.5em) {
-    .header {
-      height: 95vh;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%); } }
-  .header .heading-1 {
-    font-weight: 700;
-    font-size: 6.5vw;
-    text-align: center;
-    letter-spacing: 5px;
-    font-family: "Nanum Myeongjo", serif;
-    color: white;
-    line-height: 1;
-    text-shadow: 1px 1px 2px black; }
-    .header .heading-1--main {
-      margin-top: 4rem; }
-    .header .heading-1--sub {
-      letter-spacing: 2px;
-      padding-bottom: 2rem;
-      border-bottom: 2px solid white;
-      font-size: 3vw; }
-      .header .heading-1--sub .super {
-        font-size: 50%; }
-  .header__prayer {
-    color: white;
-    margin-top: 3rem;
-    padding: 2rem 5rem;
-    background-color: rgba(255, 255, 255, 0.35);
-    font-size: 1.7rem;
-    letter-spacing: 0.2rem;
-    line-height: 1.7; }
+.header .heading-1 {
+  font-weight: 700;
+  font-size: 6.5vw;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Nanum Myeongjo", serif;
+  color: white;
+  line-height: 1;
+  text-shadow: 1px 1px 2px black; }
+
+.header--main {
+  margin-top: 4rem; }
+
+.header--sub {
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid white;
+  font-size: 3vw; }
+  .header--sub .super {
+    font-size: 50%; }
+
+.header__prayer {
+  color: white;
+  margin-top: 3rem;
+  padding: 2rem 5rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.7; }
 
 .navigation__checkbox {
   display: none; }
@@ -925,29 +915,30 @@ i.icon {
   display: block;
   border: 2px solid black;
   margin: 0 auto;
-  height: 17rem;
+  height: 10rem;
   width: 90%;
-  border-radius: 10rem;
+  border-radius: 5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
   background-color: #eeeeee;
-  background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
-  transition: .2s; }
+  transition: 0.2s; }
   .registry__link:link:hover, .registry__link:link:active, .registry__link:visited:hover, .registry__link:visited:active {
     background-color: #fff;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     transform: scale(1.05); }
 
 .registry__link-amazon {
+  background-size: 50% 70%;
   background-image: url("../img/amazon.png"); }
 
 .registry__link-target {
+  background-size: 55% 85%;
   background-image: url("../img/target.png"); }
 
 .row {
-  max-width: 120rem;
+  max-width: 125rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -961,7 +952,7 @@ i.icon {
   @media (max-width: 37.5em) {
     .row {
       max-width: 53rem;
-      padding: 0 2rem; } }
+      padding: 0; } }
   .row::after {
     content: "";
     display: table;
@@ -991,14 +982,16 @@ i.icon {
     width: calc( 3 * (100% - 3 *6rem) / 4 + 2 * 6rem); }
 
 .header {
-  padding: 5vw 0; }
+  padding: 5vw 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc); }
 
 .section-events {
-  padding: 15rem 3rem;
-  background-image: linear-gradient(to right top, #a7878fcc, #e5ccd9cc);
-  transform: skewY(-3.75deg); }
-  .section-events > * {
-    transform: skewY(3.75deg); }
+  padding: 15rem 0;
+  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 50% 95%, 0 100%);
+  background-image: linear-gradient(to right top, #a7878fcc, #e5ccd9cc); }
   .section-events hr {
     margin: 6rem auto 6rem auto;
     border: none;
@@ -1013,18 +1006,13 @@ i.icon {
       padding: 10rem 0; } }
 
 .section-wedding-party {
-  transform: skewY(-3.75deg);
-  margin: 15rem 0;
-  padding: 13rem 0;
+  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 50% 95%, 0 100%);
+  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #a7878fcc, #e5ccd9cc); }
   @media (max-width: 62em) {
     .section-wedding-party {
       padding: 5rem 0;
       margin-top: 0; } }
-  .section-wedding-party .heading-2 {
-    color: #343434; }
-  .section-wedding-party > * {
-    transform: skewY(3.75deg); }
 
 .section-couple {
   padding: 10rem 0 2rem 0; }
