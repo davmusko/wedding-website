@@ -1,5 +1,4 @@
 .header {
-  padding: 5vw 0;
   @include clipBottom;
   position: relative;
   height: 95vh;
@@ -8,16 +7,15 @@
     $color-primary + cc,
     $color-primary-light + cc
   );
+  @include respond(phone) {
+    // padding: 10rem 0;
+  }
 }
 .section {
   &-events {
-    padding: 15rem 0;
+    padding: 10rem 0 20rem 0;
     @include clipBoth;
-    background-image: linear-gradient(
-      to right top,
-      $color-primary + cc,
-      $color-secondary-white + cc
-    );
+    background-color: $color-grey-light-2;
     & hr {
       margin: 6rem auto 6rem auto;
       border: none;
@@ -27,44 +25,51 @@
       @include respond(tab-port) {
         margin: 3.5rem auto 3.5rem auto;
       }
+      @include respond(phone) {
+        @include clipBothPhone;
+      }
     }
-    @include respond(tab-port) {
-      padding: 10rem 0;
-    }
+    // @include respond(tab-port) {
+    //   padding: 15rem 0;
+    // }
   }
   &-wedding-party {
     @include clipBoth;
-
-    padding: 15rem 0;
+    padding: 15rem 0 20rem 0;
     background-image: linear-gradient(
       to right bottom,
       $color-primary + cc,
       $color-secondary-white + cc
     );
-    @include respond(tab-port) {
-      padding: 5rem 0;
-      margin-top: 0;
+    // @include respond(tab-port) {
+    //   padding: 10rem 0;
+    //   margin-top: 0;
+    // }
+    @include respond(phone) {
+      @include clipBothPhone;
     }
   }
   &-couple {
-    padding: 10rem 0 2rem 0;
-    @include respond(tab-port) {
-      padding: 3rem 0;
-    }
+    padding: 10rem 1rem 2rem 1rem;
+    // @include respond(tab-port) {
+    //   padding: 3rem 0;
+    // }
   }
   &-registry {
-    padding: 10rem 15rem 15rem;
+    position: relative;
+    margin-top: -15rem;
+    padding: 20rem 15rem 15rem;
     @include respond(tab-port) {
-      padding: 10rem 0;
+      padding: 20rem 5rem 10rem 5rem;
     }
   }
 }
 
 /*
-||============================================================================||
-||                    Nav bar link landing position spacing                   ||
-||============================================================================||
-*/
+  ||============================================================================||
+  ||                    Nav bar link landing position spacing                   ||
+  ||============================================================================||
+  */
 
 #couple {
   position: absolute;

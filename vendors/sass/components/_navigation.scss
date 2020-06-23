@@ -140,12 +140,19 @@
   }
   &__list-item {
     margin-bottom: 1.5rem;
+    @include respond(tab-port) {
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
   &__link {
     &:visited,
     &:link {
       font-family: $font-family-serif;
-      text-shadow: 0.5rem 0.5rem 0.7rem rgba($color-black, 0.65);
+      text-shadow: 1px 1px 1px rgba(black, 0.5);
       padding: 1rem 2rem;
       color: $color-white;
       font-size: 3rem;

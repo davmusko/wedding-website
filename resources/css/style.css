@@ -1,4 +1,7 @@
 /*
+    @mixin clipBothPhone {
+      clip-path: polygon(0 2.5%, 50% 0, 100% 2.5%, 100% 100%, 50% 97.5%, 0 100%);
+    }
 ||============================================================================||
 ||                               Media Query Manager                          ||
 ||============================================================================||
@@ -59,10 +62,23 @@ body {
   margin-block-start: 1rem;
   margin-block-end: 0; }
 
+.heading-1 {
+  font-weight: 700;
+  font-size: 6.5vw;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Nanum Myeongjo", serif;
+  color: white;
+  line-height: 1;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 5rem; } }
+
 .heading-2 {
   font-family: "Nanum Myeongjo", serif;
   font-size: 3.7rem;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   font-weight: 700; }
   @media (max-width: 62em) {
     .heading-2 {
@@ -426,7 +442,7 @@ body {
   line-height: 2;
   letter-spacing: 0.007rem;
   font-weight: 500;
-  flex-basis: 60%; }
+  flex-basis: 70%; }
   .couple__paragraph span.indent {
     margin-right: 5rem; }
   @media (max-width: 37.5em) {
@@ -462,7 +478,7 @@ i.icon {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: .2;
+  opacity: 0.3;
   overflow: hidden;
   background-image: url(../img/hero.jpg);
   background-position: center;
@@ -503,7 +519,8 @@ i.icon {
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 1rem;
-  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5); }
   @media (max-width: 37.5em) {
     .event {
       background-attachment: local; } }
@@ -582,35 +599,48 @@ i.icon {
   .footer__copyright {
     color: #cce5d9; }
 
-.header .heading-1 {
-  font-weight: 700;
-  font-size: 6.5vw;
-  text-align: center;
-  letter-spacing: 5px;
-  font-family: "Nanum Myeongjo", serif;
-  color: white;
-  line-height: 1;
-  text-shadow: 1px 1px 2px black; }
-
-.header--main {
-  margin-top: 4rem; }
-
-.header--sub {
-  letter-spacing: 2px;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid white;
-  font-size: 3vw; }
-  .header--sub .super {
-    font-size: 50%; }
-
-.header__prayer {
-  color: white;
-  margin-top: 3rem;
-  padding: 2rem 5rem;
-  background-color: rgba(255, 255, 255, 0.35);
-  font-size: 1.7rem;
-  letter-spacing: 0.2rem;
-  line-height: 1.7; }
+.header {
+  position: relative; }
+  .header--main {
+    margin-top: 4rem; }
+    @media (max-width: 37.5em) {
+      .header--main {
+        letter-spacing: 3px; } }
+  .header--sub {
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid white;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
+    font-size: 3vw; }
+    @media (max-width: 37.5em) {
+      .header--sub {
+        letter-spacing: 2px;
+        font-size: 3rem; } }
+    .header--sub .super {
+      font-size: 50%; }
+  .header__prayer {
+    font-weight: 500;
+    text-indent: 3.5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-top: 3rem;
+    padding: 1.5rem 5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word; }
+    @media (max-width: 37.5em) {
+      .header__prayer {
+        padding: 1rem 3rem;
+        letter-spacing: -1px;
+        line-height: 1.4;
+        font-weight: 300; } }
+  .header__flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .navigation__checkbox {
   display: none; }
@@ -739,10 +769,17 @@ i.icon {
 
 .navigation__list-item {
   margin-bottom: 1.5rem; }
+  @media (max-width: 62em) {
+    .navigation__list-item {
+      margin-bottom: 0;
+      line-height: 1.5; } }
+  @media (max-width: 37.5em) {
+    .navigation__list-item {
+      margin-bottom: 2rem; } }
 
 .navigation__link:visited, .navigation__link:link {
   font-family: "Nanum Myeongjo", serif;
-  text-shadow: 0.5rem 0.5rem 0.7rem rgba(0, 0, 0, 0.65);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   color: #ffffff;
   font-size: 3rem;
@@ -815,7 +852,7 @@ i.icon {
 .owl-carousel .testimonial {
   background: #eeeeee;
   text-align: center;
-  padding: 3rem 3rem 5rem;
+  padding: 5rem 2rem 5rem;
   margin: 0 1.5rem 10rem;
   margin-top: 4rem !important;
   position: relative;
@@ -842,17 +879,27 @@ i.icon {
         border-left: 17rem solid transparent; } }
   .owl-carousel .testimonial .icon {
     display: inline-block;
-    font-size: 8rem;
+    font-size: 6rem;
     color: #343434;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     opacity: 0.6; }
   .owl-carousel .testimonial .description {
-    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1.5rem;
+    height: 27rem;
+    font-size: 1.75rem;
     color: #343434;
-    text-align: justify;
-    margin-bottom: 3rem;
+    text-align: start;
+    margin-bottom: 1rem;
     opacity: 0.9;
     letter-spacing: -1px; }
+    @media (max-width: 62em) {
+      .owl-carousel .testimonial .description {
+        height: 25rem;
+        padding: 2rem; } }
+    @media (max-width: 37.5em) {
+      .owl-carousel .testimonial .description {
+        letter-spacing: 0; } }
   .owl-carousel .testimonial .testimonial-content {
     width: 100%;
     position: absolute;
@@ -865,7 +912,7 @@ i.icon {
     overflow: hidden;
     z-index: 1;
     position: relative;
-    transform: translateY(-2.25rem); }
+    transform: translateY(-3.5rem); }
     .owl-carousel .testimonial .pic img {
       width: 100%;
       height: auto; }
@@ -873,7 +920,7 @@ i.icon {
     font-size: 2rem;
     font-weight: 600;
     color: #343434;
-    margin: -2rem 0 0.2rem 0;
+    margin: -3.75rem 0 0.2rem 0;
     display: block; }
   .owl-carousel .testimonial .post {
     margin-top: 0.5rem;
@@ -896,14 +943,14 @@ i.icon {
       .owl-theme .owl-controls .owl-page span {
         width: 4.8rem;
         height: 1.5rem;
-        margin: 0 .5rem; } }
+        margin: 0 0.5rem; } }
   .owl-theme .owl-controls .owl-page.active span,
   .owl-theme .owl-controls.clickable .owl-page:hover span {
     background: #343434;
     border-color: #eeeeee; }
 
 .pic img {
-  width: 10rem !important;
+  width: 12rem !important;
   height: 5rem; }
 
 .registry__heading {
@@ -924,6 +971,12 @@ i.icon {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.2s; }
+  @media (max-width: 62em) {
+    .registry__link:link, .registry__link:visited {
+      width: 75%; } }
+  @media (max-width: 37.5em) {
+    .registry__link:link, .registry__link:visited {
+      width: 90%; } }
   .registry__link:link:hover, .registry__link:link:active, .registry__link:visited:hover, .registry__link:visited:active {
     background-color: #fff;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
@@ -932,10 +985,71 @@ i.icon {
 .registry__link-amazon {
   background-size: 50% 70%;
   background-image: url("../img/amazon.png"); }
+  @media (max-width: 37.5em) {
+    .registry__link-amazon {
+      background-size: 70% 70%; } }
 
 .registry__link-target {
   background-size: 55% 85%;
   background-image: url("../img/target.png"); }
+  @media (max-width: 37.5em) {
+    .registry__link-target {
+      background-size: 75% 85%; } }
+
+.slider__list {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  .slider__list li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 18s linear infinite 0s; }
+  .slider__list li:nth-child(1) span {
+    background-image: url("../img/slider/hero-4.jpg"); }
+    @media (max-width: 37.5em) {
+      .slider__list li:nth-child(1) span {
+        background-image: url("../img/slider/hero-11-phone.jpg"); } }
+  .slider__list li:nth-child(2) span {
+    background-image: url("../img/slider/hero-8.jpg");
+    animation-delay: 6s; }
+    @media (max-width: 37.5em) {
+      .slider__list li:nth-child(2) span {
+        background-image: url("../img/slider/hero-13-phone.jpg"); } }
+  .slider__list li:nth-child(3) span {
+    background-image: url("../img/slider/hero-6.jpg");
+    animation-delay: 12s; }
+    @media (max-width: 37.5em) {
+      .slider__list li:nth-child(3) span {
+        background-image: url("../img/slider/hero-5-phone.jpg"); } }
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in; }
+  17% {
+    opacity: 0.7;
+    animation-timing-function: ease-out; }
+  33% {
+    opacity: 0.7;
+    transform: scale(1.05); }
+  50% {
+    opacity: 0;
+    transform: scale(1.1); }
+  100% {
+    opacity: 0; } }
 
 .row {
   max-width: 125rem;
@@ -982,16 +1096,15 @@ i.icon {
     width: calc( 3 * (100% - 3 *6rem) / 4 + 2 * 6rem); }
 
 .header {
-  padding: 5vw 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
   position: relative;
   height: 95vh;
   background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc); }
 
 .section-events {
-  padding: 15rem 0;
-  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 50% 95%, 0 100%);
-  background-image: linear-gradient(to right top, #a7878fcc, #e5ccd9cc); }
+  padding: 10rem 0 20rem 0;
+  clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
+  background-color: #eeeeee; }
   .section-events hr {
     margin: 6rem auto 6rem auto;
     border: none;
@@ -1001,36 +1114,34 @@ i.icon {
     @media (max-width: 62em) {
       .section-events hr {
         margin: 3.5rem auto 3.5rem auto; } }
-  @media (max-width: 62em) {
-    .section-events {
-      padding: 10rem 0; } }
+    @media (max-width: 37.5em) {
+      .section-events hr {
+        clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
 
 .section-wedding-party {
-  clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 50% 95%, 0 100%);
-  padding: 15rem 0;
+  clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
+  padding: 15rem 0 20rem 0;
   background-image: linear-gradient(to right bottom, #a7878fcc, #e5ccd9cc); }
-  @media (max-width: 62em) {
+  @media (max-width: 37.5em) {
     .section-wedding-party {
-      padding: 5rem 0;
-      margin-top: 0; } }
+      clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
 
 .section-couple {
-  padding: 10rem 0 2rem 0; }
-  @media (max-width: 62em) {
-    .section-couple {
-      padding: 3rem 0; } }
+  padding: 10rem 1rem 2rem 1rem; }
 
 .section-registry {
-  padding: 10rem 15rem 15rem; }
+  position: relative;
+  margin-top: -15rem;
+  padding: 20rem 15rem 15rem; }
   @media (max-width: 62em) {
     .section-registry {
-      padding: 10rem 0; } }
+      padding: 20rem 5rem 10rem 5rem; } }
 
 /*
-||============================================================================||
-||                    Nav bar link landing position spacing                   ||
-||============================================================================||
-*/
+  ||============================================================================||
+  ||                    Nav bar link landing position spacing                   ||
+  ||============================================================================||
+  */
 #couple {
   position: absolute;
   top: -5rem; }

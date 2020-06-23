@@ -21,6 +21,12 @@
       background-repeat: no-repeat;
       background-position: center;
       transition: 0.2s;
+      @include respond(tab-port) {
+        width: 75%;
+      }
+      @include respond(phone) {
+        width: 90%;
+      }
       &:hover,
       &:active {
         background-color: #fff;
@@ -32,10 +38,16 @@
     &-amazon {
       background-size: 50% 70%;
       background-image: url("../img/amazon.png");
+      @include respond(phone) {
+        background-size: 70% 70%;
+      }
     }
     &-target {
       background-size: 55% 85%;
       background-image: url("../img/target.png");
+      @include respond(phone) {
+        background-size: 75% 85%;
+      }
     }
   }
 }

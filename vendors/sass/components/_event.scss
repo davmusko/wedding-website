@@ -6,7 +6,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   border-radius: 1rem;
-  box-shadow: 1rem 2rem 4rem rgba($color-black, 0.4);
+  box-shadow: 1rem 2rem 4rem rgba($color-black, 0.7);
+  border: 1px solid rgba(black, 0.5);
 
   @include respond(phone) {
     background-attachment: local;
