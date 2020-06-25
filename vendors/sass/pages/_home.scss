@@ -37,9 +37,9 @@
     @include clipBoth;
     padding: 15rem 0 20rem 0;
     background-image: linear-gradient(
-      to right bottom,
-      $color-primary + cc,
-      $color-secondary-white + cc
+      to bottom,
+      rgba($color-secondary-white, 0.8),
+      rgba($color-primary, 0.5)
     );
     // @include respond(tab-port) {
     //   padding: 10rem 0;

@@ -1,17 +1,31 @@
 .header {
   position: relative;
   &--main {
-    margin-top: 4rem;
+    margin-top: 2rem;
     @include respond(phone) {
       letter-spacing: 3px;
     }
   }
+  &__david {
+    animation: fadeInRight 1s ease-out;
+    display: inline-block;
+  }
+  &__jelena {
+    animation: fadeInLeft 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    display: inline-block;
+  }
   &--sub {
+    // opacity: 0;
+    display: inline-block;
     letter-spacing: 3px;
     padding-bottom: 2rem;
+    line-height: 1.7;
     border-bottom: 2px solid white;
     box-shadow: 0 1px 0 0 rgba(black, 0.5);
-    font-size: 3vw;
+    font-size: 2.7vw;
+    // animation: fadeInBottom 2s ease-in 2s forwards;
     @include respond(phone) {
       letter-spacing: 2px;
       font-size: 3rem;
@@ -20,25 +34,17 @@
       font-size: 50%;
     }
   }
-  // // width: 100%;
-  // text-align: center;
-  // // left: 50%;
-  // transform: translate(-50%, -50%);
-  // text-shadow: 1px 1px 2px black;
-  // &--main {
-  //   position: absolute;
-  //   top: 20%;
-  //   left: 50%;
-  // }
 
   &__prayer {
     font-weight: 500;
     text-indent: 3.5rem;
-    text-shadow: 1px 1px 1px rgba(black, 0.5);
-    color: white;
-    margin-top: 3rem;
+    text-shadow: 2px 1px rgba(black, 1);
+    color: rgba(white, 1);
+    margin-top: 4rem;
     padding: 1.5rem 5rem;
-    background-color: rgba(black, 0.4);
+    background: rgba(black, 0.4);
+    border-top: 2px solid rgba(white, 0.35);
+    border-bottom: 2px solid rgba(white, 0.5);
     font-size: 1.7rem;
     letter-spacing: 1px;
     line-height: 1.7;
@@ -50,25 +56,11 @@
       line-height: 1.4;
       font-weight: 300;
     }
-    // text-shadow: 1px 1px px black;
   }
-  //   &__title--name {
-  //     // border-bottom: 1px $color-white solid;
-  //     // box-shadow: 0 0.2rem rgba($color-black, 0.4);
-  //   }
-  //   &__title--date {
-  //     font-weight: 400;
-  //     display: inline;
-  //     font-size: 5rem;
-  //     & .super {
-  //       font-size: 60%;
-  //     }
-  //   }
+
   &__flex-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  //   &__flex-item {
-  //   }
 }

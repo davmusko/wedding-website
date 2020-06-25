@@ -29,17 +29,18 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="resources/css/style.css" />
+    <!-- <link rel="stylesheet" href="resources/css/style.css" /> -->
+    <link rel="stylesheet" href="resources/css/style.min.css" />
     <title>Return to Love | 9.18.2020</title>
   </head>
   <body>
@@ -87,7 +88,8 @@
           >
         </h1>
         <h1 class="heading-1 header--main">
-          David & Jelena
+          <span class="header__david">David</span> &
+          <span class="header__jelena">Jelena</span>
         </h1>
         <p class="header__prayer">
           "Let us pray for God's blessing to come upon this couple, our brother
@@ -115,6 +117,8 @@
 
       <div class="slider">
         <ul class="slider__list">
+          <li><span></span></li>
+          <li><span></span></li>
           <li><span></span></li>
           <li><span></span></li>
           <li><span></span></li>
@@ -416,18 +420,17 @@
               <div class="testimonial">
                 <span class="icon fa fa-quote-right"></span>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam justo neque, aliquet sit amet elementum vel, vehicula
-                  eget eros. Vivamus arcu metus, mattis sed sagittis at,
-                  sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed
-                  sagittis at, sagittis quis neque. Praesent.
+                  Matt and David have been close friends since meeting in middle
+                  school. They both share a passion for the outdoors, which lead
+                  to many spontaneous adventures. Matt currently lives in Reno,
+                  Nevada where he works as a physician assistant.
                 </p>
                 <div class="testimonial-content">
                   <div class="pic">
                     <img src="resources/img/matt.jpg" alt="Matthew Pierce" />
                   </div>
                   <h3 class="title">
-                    Matthew Pierce<span class="post">Groomsman</span>
+                    Matt Pearce<span class="post">Groomsman</span>
                   </h3>
                 </div>
               </div>
@@ -441,7 +444,7 @@
                 </p>
                 <div class="testimonial-content">
                   <div class="pic">
-                    <img src="resources/img/david.jpg" alt="David Musko" />
+                    <img src="resources/img/david.png" alt="David Musko" />
                   </div>
                   <h3 class="title">
                     David Musko<span class="post">Groomsman</span>
@@ -493,7 +496,7 @@
             </div>
           </div>
         </div>
-        <hr />
+        <i class="fa fa-heart icon" id="test" aria-hidden="true"></i>
         <div class="row">
           <div class="event event--reception">
             <div class="event__info">
