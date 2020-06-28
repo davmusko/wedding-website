@@ -82,3 +82,46 @@ body {
 .heading-6 {
   font-family: $font-family-serif;
 }
+
+// .icon-row i {
+//   padding: 3rem;
+//   color: $color-secondary-light;
+//   text-shadow: 2px 2px $color-secondary, -2px -2px $color-secondary,
+//     -2px 2px $color-secondary, 2px -2px $color-secondary,
+//     0 -2.5px $color-secondary, 0 4px $color-secondary, 3px 0 $color-secondary;
+// }
+// .icon-row {
+//   padding: 2rem 0;
+
+//   .heart-icon {
+//     position: relative;
+//     text-align: center;
+
+//     .fa-heart {
+//       color: $color-secondary-light;
+//       &-o {
+//         color: $color-secondary;
+//       }
+//     }
+//   }
+// }
+
+.icon-row {
+  //   padding: 2rem 0;
+  text-align: center;
+
+  .heart-icon {
+    padding: 0 2rem;
+  }
+
+  .fa-heart {
+    color: $color-primary-light;
+    position: relative;
+    &-o {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $color-primary;
+    }
+  }
+}

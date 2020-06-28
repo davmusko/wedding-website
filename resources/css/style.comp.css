@@ -68,16 +68,16 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
@@ -85,7 +85,7 @@ body {
   padding: 1.5rem;
   box-sizing: border-box;
   background-color: #eeeeee; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     body {
       padding: 0; } }
 
@@ -124,7 +124,7 @@ body {
   color: white;
   line-height: 1;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5); }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .heading-1 {
       font-size: 5rem; } }
 
@@ -133,10 +133,10 @@ body {
   font-size: 3.7rem;
   letter-spacing: 0.1rem;
   font-weight: 700; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .heading-2 {
       font-size: 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .heading-2 {
       font-size: 2.5rem; } }
 
@@ -144,10 +144,10 @@ body {
   font-family: "Nanum Myeongjo", serif;
   font-size: 2rem;
   font-weight: 700; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .heading-3 {
       font-size: 1.75rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .heading-3 {
       font-size: 1.6rem; } }
 
@@ -156,10 +156,10 @@ body {
   font-size: 1.75rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.2); }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .heading-4 {
       font-size: 1.6rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .heading-4 {
       font-size: 1.5rem; } }
 
@@ -168,6 +168,19 @@ body {
 
 .heading-6 {
   font-family: "Nanum Myeongjo", serif; }
+
+.icon-row {
+  text-align: center; }
+  .icon-row .heart-icon {
+    padding: 0 2rem; }
+  .icon-row .fa-heart {
+    color: #c7b3b8;
+    position: relative; }
+    .icon-row .fa-heart-o {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #a7878f; }
 
 .text-center {
   text-align: center !important; }
@@ -476,7 +489,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .couple__img {
       margin-bottom: 3rem; } }
   .couple__img--1 {
@@ -484,7 +497,7 @@ body {
   .couple__img--2 {
     background-image: url(../img/couple-2.png);
     order: 2; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .couple__img--2 {
         order: 0; } }
 
@@ -498,7 +511,7 @@ body {
   flex-basis: 70%; }
   .couple__paragraph span.indent {
     margin-right: 5rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .couple__paragraph {
       flex-basis: 75%; } }
 
@@ -545,21 +558,22 @@ i.icon {
 .btn-text {
   padding: 0.3rem 2rem;
   border-radius: 5px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #343434; }
   .btn-text:link, .btn-text:visited {
     text-decoration: none;
-    color: #343434;
+    color: #eeeeee;
     display: inline-block;
     font-size: 2rem;
-    border: 2px solid #343434;
     transition: all 0.2s;
     font-weight: 700; }
   .btn-text:hover {
-    background-color: #343434;
+    background-color: #eeeeee;
     font-weight: 700;
-    color: #eeeeee;
+    color: #343434;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-    transform: scale(1.15); }
+    transform: scale(1.15);
+    border: 2px solid #343434; }
   .btn-text:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transform: translateY(0); }
@@ -567,6 +581,7 @@ i.icon {
 .event {
   padding: 4rem;
   width: 100%;
+  margin: 10rem 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -574,23 +589,23 @@ i.icon {
   border-radius: 1rem;
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
   border: 1px solid rgba(0, 0, 0, 0.5); }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 62em) {
     .event {
-      background-attachment: local; } }
+      background-attachment: scroll; } }
   .event--ceremony {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/church.jpg); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .event--ceremony {
-        background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/church.jpg); } }
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/church.jpg); } }
   .event--reception {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/golfclub.jpg); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .event--reception {
-        background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/golfclub.jpg); } }
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/golfclub.jpg); } }
   .event__info {
     width: 45%;
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .event__info {
         width: 100%; } }
   .event__body {
@@ -628,7 +643,7 @@ i.icon {
     width: 10rem; }
   .footer__nav {
     display: inline-block; }
-    @media (max-width: 62em) {
+    @media only screen and (max-width: 62em) {
       .footer__nav {
         width: 100%;
         text-align: center; } }
@@ -656,7 +671,7 @@ i.icon {
   position: relative; }
   .header--main {
     margin-top: 2rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .header--main {
         letter-spacing: 3px; } }
   .header__david {
@@ -675,7 +690,7 @@ i.icon {
     border-bottom: 2px solid white;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
     font-size: 2.7vw; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .header--sub {
         letter-spacing: 2px;
         font-size: 3rem; } }
@@ -696,7 +711,7 @@ i.icon {
     line-height: 1.7;
     text-align: justify;
     text-justify: inter-word; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .header__prayer {
         padding: 1rem 3rem;
         letter-spacing: -1px;
@@ -743,11 +758,11 @@ i.icon {
   box-shadow: 0 3px 0.7rem 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.2s; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .navigation__btn {
       top: 4rem;
       right: 4rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .navigation__btn {
       width: 6rem;
       height: 6rem;
@@ -768,7 +783,7 @@ i.icon {
     height: 2px;
     background-color: #292929;
     display: inline-block; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .navigation__icon, .navigation__icon::after, .navigation__icon::before {
         width: 2.5rem;
         height: 1px; } }
@@ -779,12 +794,12 @@ i.icon {
     transition: all 0.35s; }
   .navigation__icon::before {
     top: -0.8rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .navigation__icon::before {
         top: -0.65rem; } }
   .navigation__icon::after {
     top: 0.8rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .navigation__icon::after {
         top: 0.65rem; } }
 
@@ -804,11 +819,11 @@ i.icon {
   z-index: 5;
   background-image: radial-gradient(#c7b3b8, #a7878f);
   transition: transform 1s cubic-bezier(0.83, 0, 0.17, 1); }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .navigation__background {
       top: 5.75rem;
       right: 5.75rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
@@ -834,11 +849,11 @@ i.icon {
 
 .navigation__list-item {
   margin-bottom: 1.5rem; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .navigation__list-item {
       margin-bottom: 0;
       line-height: 1.5; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .navigation__list-item {
       margin-bottom: 2rem; } }
 
@@ -889,7 +904,7 @@ i.icon {
   .popup__map {
     height: 85vh;
     width: 85vw; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .popup__map {
         height: 75vh;
         width: 75vw; } }
@@ -917,11 +932,9 @@ i.icon {
 .owl-carousel .testimonial {
   background: #eeeeee;
   text-align: center;
-  padding: 5rem 2rem 5rem;
-  margin: 0 1.5rem 10rem;
-  margin-top: 4rem !important;
+  padding: 4rem 2rem 5rem;
+  margin: 6rem 1.5rem 10rem;
   position: relative;
-  margin-top: 6rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem; }
   .owl-carousel .testimonial::before, .owl-carousel .testimonial::after {
@@ -931,7 +944,7 @@ i.icon {
     position: absolute;
     bottom: -3.9rem;
     left: 0; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .owl-carousel .testimonial::before, .owl-carousel .testimonial::after {
         border-right: 17rem solid transparent; } }
   .owl-carousel .testimonial::after {
@@ -939,14 +952,13 @@ i.icon {
     border-left: 12.5rem solid transparent;
     left: auto;
     right: 0; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .owl-carousel .testimonial::after {
         border-left: 17rem solid transparent; } }
   .owl-carousel .testimonial .icon {
     display: inline-block;
     font-size: 6rem;
     color: #343434;
-    margin-bottom: 1rem;
     opacity: 0.6; }
   .owl-carousel .testimonial .description {
     line-height: 1.7;
@@ -958,11 +970,11 @@ i.icon {
     margin-bottom: 1rem;
     opacity: 0.9;
     letter-spacing: -1px; }
-    @media (max-width: 62em) {
+    @media only screen and (max-width: 62em) {
       .owl-carousel .testimonial .description {
         height: 25rem;
         padding: 2rem; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .owl-carousel .testimonial .description {
         letter-spacing: 0; } }
   .owl-carousel .testimonial .testimonial-content {
@@ -1004,7 +1016,7 @@ i.icon {
     margin: 0 2rem;
     opacity: 0.6;
     box-shadow: 0.1rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .owl-theme .owl-controls .owl-page span {
         width: 4.8rem;
         height: 1.5rem;
@@ -1036,10 +1048,10 @@ i.icon {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.2s; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .registry__link:link, .registry__link:visited {
       width: 75%; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .registry__link:link, .registry__link:visited {
       width: 90%; } }
   .registry__link:link:hover, .registry__link:link:active, .registry__link:visited:hover, .registry__link:visited:active {
@@ -1050,14 +1062,14 @@ i.icon {
 .registry__link-amazon {
   background-size: 50% 70%;
   background-image: url("../img/amazon.png"); }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .registry__link-amazon {
       background-size: 70% 70%; } }
 
 .registry__link-target {
   background-size: 55% 85%;
   background-image: url("../img/target.png"); }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .registry__link-target {
       background-size: 75% 85%; } }
 
@@ -1084,47 +1096,42 @@ i.icon {
     animation: imageAnimation 30s linear infinite 0s; }
   .slider__list li:nth-child(1) span {
     background-image: url("../img/slider/hero-4.jpg"); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .slider__list li:nth-child(1) span {
         background-image: url("../img/slider/hero-13-phone.jpg"); } }
   .slider__list li:nth-child(2) span {
     background-image: url("../img/slider/hero-6.jpg");
     animation-delay: 6s; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .slider__list li:nth-child(2) span {
         background-image: url("../img/slider/hero-5-phone.jpg"); } }
   .slider__list li:nth-child(3) span {
     background-image: url("../img/slider/hero-8.jpg");
     animation-delay: 12s; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .slider__list li:nth-child(3) span {
         background-image: url("../img/slider/hero-11-phone.jpg"); } }
   .slider__list li:nth-child(4) span {
     background-image: url("../img/slider/hero-5.jpg");
     animation-delay: 18s; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .slider__list li:nth-child(4) span {
         background-image: url("../img/slider/hero-8-phone.jpg"); } }
   .slider__list li:nth-child(5) span {
     background-image: url("../img/slider/hero-9.jpg");
     animation-delay: 24s; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .slider__list li:nth-child(5) span {
         background-image: url("../img/slider/hero-1-phone.jpg"); } }
 
 .row {
   max-width: 125rem;
   margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media (max-width: 62em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .row {
       max-width: 100rem;
       padding: 0 3rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .row {
       max-width: 53rem;
       padding: 0; } }
@@ -1136,11 +1143,11 @@ i.icon {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 62em) {
+      @media only screen and (max-width: 62em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 62em) {
+    @media only screen and (max-width: 62em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-2 {
@@ -1166,24 +1173,15 @@ i.icon {
   padding: 10rem 0 20rem 0;
   clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
   background-color: #eeeeee; }
-  .section-events hr {
-    margin: 6rem auto 6rem auto;
-    border: none;
-    border-top: dotted 2rem;
-    width: 15%;
-    opacity: 0.75; }
-    @media (max-width: 62em) {
-      .section-events hr {
-        margin: 3.5rem auto 3.5rem auto; } }
-    @media (max-width: 37.5em) {
-      .section-events hr {
-        clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
+  @media only screen and (max-width: 31.25em) {
+    .section-events {
+      clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
 
 .section-wedding-party {
   clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
   padding: 15rem 0 20rem 0;
   background-image: linear-gradient(to bottom, rgba(229, 204, 217, 0.8), rgba(167, 135, 143, 0.5)); }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .section-wedding-party {
       clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
 
@@ -1194,7 +1192,7 @@ i.icon {
   position: relative;
   margin-top: -15rem;
   padding: 20rem 15rem 15rem; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     .section-registry {
       padding: 20rem 5rem 10rem 5rem; } }
 
@@ -1210,21 +1208,21 @@ i.icon {
 #wedding-party {
   position: absolute;
   top: -2rem; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     #wedding-party {
       top: -5rem; } }
 
 #ceremony {
   position: absolute;
   top: -6rem; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     #ceremony {
       top: -8rem; } }
 
 #reception {
   position: absolute;
   top: -6rem; }
-  @media (max-width: 62em) {
+  @media only screen and (max-width: 62em) {
     #reception {
       top: -8rem; } }
 

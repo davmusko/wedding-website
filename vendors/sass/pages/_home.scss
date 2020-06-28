@@ -16,18 +16,9 @@
     padding: 10rem 0 20rem 0;
     @include clipBoth;
     background-color: $color-grey-light-2;
-    & hr {
-      margin: 6rem auto 6rem auto;
-      border: none;
-      border-top: dotted 2rem;
-      width: 15%;
-      opacity: 0.75;
-      @include respond(tab-port) {
-        margin: 3.5rem auto 3.5rem auto;
-      }
-      @include respond(phone) {
-        @include clipBothPhone;
-      }
+
+    @include respond(phone) {
+      @include clipBothPhone;
     }
     // @include respond(tab-port) {
     //   padding: 15rem 0;
