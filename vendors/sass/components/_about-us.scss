@@ -33,15 +33,12 @@
   &__paragraph {
     background-color: #eee;
     text-align: justify;
+    text-indent: 4rem;
     font-size: 1.8rem;
     line-height: 2;
     letter-spacing: 0.007rem;
     font-weight: 500;
     flex-basis: 70%;
-
-    & span.indent {
-      margin-right: 5rem;
-    }
 
     @include respond(phone) {
       flex-basis: 75%;
