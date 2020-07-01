@@ -16,8 +16,8 @@ function runSlider(id) {
     items: 3,
     itemsDesktop: [1000, 3],
     itemsDesktopSmall: [992, 2],
-    itemsTablet: [768, 2],
-    itemsMobile: [600, 1],
+    itemsTablet: [600, 2], //itemsTablet: [768, 2],
+    itemsMobile: [500, 1], //itemsMobile: [600, 1]
     pagination: true,
     autoPlay: true,
   });

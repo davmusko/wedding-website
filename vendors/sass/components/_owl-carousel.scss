@@ -1,13 +1,22 @@
 .owl-carousel {
+  .owl-wrapper-outer {
+    padding-bottom: 3rem;
+  }
   & .testimonial {
     background: $color-grey-light-2;
+    max-width: 40vw;
     text-align: center;
-    padding: 4rem 2rem 5rem;
-    margin: 6rem 1.5rem 10rem;
+    padding: 0 2rem 5rem;
+    margin: 8rem 2rem 10rem;
     position: relative;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 
+    @media only screen and (max-width: 500px) {
+      max-width: 70vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
     &::before,
     &::after {
       content: "";
@@ -32,13 +41,14 @@
     }
     & .icon {
       display: inline-block;
-      font-size: 6rem;
+      font-size: 5rem;
       color: #343434;
       opacity: 0.6;
+      padding: 3rem 0;
     }
     & .description {
       line-height: 1.7;
-      padding: 1.5rem;
+      padding: 0 1.5rem;
       height: 27rem;
       font-size: 1.75rem;
       color: #343434;
@@ -46,7 +56,6 @@
       margin-bottom: 1rem;
       opacity: 0.9;
       letter-spacing: -1px;
-      //   text-overflow: ellipsis;
       @include respond(tab-port) {
         height: 25rem;
         padding: 2rem;
@@ -57,8 +66,9 @@
     }
     & .testimonial-content {
       width: 100%;
-      position: absolute;
-      left: 0;
+      //   position: absolute;
+      //   left: 0;
+      //   top: 1rem;
     }
     & .pic {
       display: inline-block;
@@ -70,7 +80,7 @@
       position: relative;
       transform: translateY(-3.5rem);
       & img {
-        width: 100%;
+        width: 12rem;
         height: auto;
       }
     }
@@ -82,7 +92,7 @@
       display: block;
     }
     & .post {
-      margin-top: 0.5rem;
+      margin-top: 0rem;
       font-weight: 500;
       display: block;
       font-size: 1.7rem;
@@ -91,7 +101,6 @@
   }
 }
 .owl-theme .owl-controls {
-  margin-top: 3rem;
   & .owl-page span {
     width: 6.4rem;
     height: 2rem;
@@ -111,8 +120,4 @@
     background: #343434;
     border-color: $color-grey-light-2;
   }
-}
-.pic img {
-  width: 12rem !important;
-  height: 5rem;
 }
