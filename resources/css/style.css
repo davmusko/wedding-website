@@ -580,27 +580,31 @@ i.icon {
 
 .event {
   padding: 4rem;
-  width: 100%;
-  margin: 10rem 0;
+  width: 85%;
+  margin: 10rem auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll, fixed;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.5); }
+  border: 2px solid #ebebeb; }
   @media only screen and (max-width: 62em) {
     .event {
+      margin: 6rem auto;
+      width: 95%;
       background-attachment: scroll; } }
   .event--ceremony {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/church.jpg); }
     @media only screen and (max-width: 31.25em) {
       .event--ceremony {
+        margin: 0 auto 4rem;
         background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/church.jpg); } }
   .event--reception {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/golfclub.jpg); }
     @media only screen and (max-width: 31.25em) {
       .event--reception {
+        margin-bottom: 0;
         background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/golfclub.jpg); } }
   .event__info {
     width: 45%;
@@ -608,18 +612,13 @@ i.icon {
     @media only screen and (max-width: 31.25em) {
       .event__info {
         width: 100%; } }
-  .event__body {
-    text-align: center;
-    padding: 0 1.5rem 1.5rem 1.5rem; }
   .event__address ul {
     padding: 3rem 0;
     text-align: center;
     list-style-type: none;
     font-size: 1.7rem;
-    width: 80%;
     margin: 0 auto; }
     .event__address ul li {
-      padding: 0.5rem 1rem 0.2rem 1rem;
       font-weight: 500; }
       .event__address ul li:not(:last-child) {
         border-bottom: 1px dotted rgba(41, 41, 41, 0.3);
@@ -627,8 +626,7 @@ i.icon {
       .event__address ul li:not(:first-child) {
         padding-top: 1rem; }
   .event__address div {
-    margin-top: 3rem;
-    width: 45%;
+    width: 49%;
     display: inline-block; }
 
 .footer {
@@ -1129,12 +1127,10 @@ i.icon {
   margin: 0 auto; }
   @media only screen and (max-width: 62em) {
     .row {
-      max-width: 100rem;
-      padding: 0 3rem; } }
+      max-width: 100rem; } }
   @media only screen and (max-width: 31.25em) {
     .row {
-      max-width: 53rem;
-      padding: 0; } }
+      max-width: 53rem; } }
   .row::after {
     content: "";
     display: table;
@@ -1162,6 +1158,33 @@ i.icon {
     width: calc((100% - 6rem) / 2); }
   .row .col-3-4 {
     width: calc( 3 * (100% - 3 *6rem) / 4 + 2 * 6rem); }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      width: 970px; } }
+  @media only screen and (max-width: 62em) {
+    .container {
+      width: 750px; } }
+  @media (max-width: 775px) {
+    .container {
+      width: 550px; } }
+  @media (max-width: 600px) {
+    .container {
+      width: 480px; } }
+  @media only screen and (max-width: 62em) {
+    .container {
+      width: 97%; } }
+
+.col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%; }
 
 .header {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);
