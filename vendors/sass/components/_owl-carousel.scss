@@ -16,6 +16,7 @@
     position: relative;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    // line-height: 1.7;
 
     // @media only screen and (max-width: 500px) {
     //   max-width: 80vw;
@@ -67,26 +68,29 @@
     }
 
     & .description {
+      //   display: flex;
+      //   align-items: center;
       font-weight: 500;
       text-indent: 4rem;
-      line-height: 1.7;
-      padding: 0 1.5rem;
-      height: 27rem;
-      font-size: 1.8rem;
+      //   padding: 1.5rem;
+      padding-bottom: 0.5rem;
+      height: 30rem;
+      width: 100%;
+      //   font-size: 1.8rem;
       color: #343434;
       text-align: left;
       margin-bottom: 1rem;
       opacity: 0.9;
-      letter-spacing: 0px;
-      &.chris {
-        letter-spacing: -1px;
-        padding: 0 1rem;
-      }
-      &.chris,
-      &.matt {
-        line-height: 1.6;
-        // padding: 0 1rem;
-      }
+      letter-spacing: -1px;
+      //   &.chris {
+      //     letter-spacing: -1px;
+      //     padding: 0 1rem;
+      //   }
+      //   &.chris,
+      //   &.matt {
+      //     // line-height: 1.6;
+      //     // padding: 0 1rem;
+      //   }
       @include respond(tab-port) {
         text-indent: 4rem;
         height: 25rem;
@@ -94,28 +98,26 @@
       }
       @include respond(phone) {
         text-indent: 3rem;
-        height: 27rem;
-        padding: 0 0.5rem;
       }
-      @media only screen and (max-width: 350px) {
-        font-size: 1.7rem;
-        &.chris,
-        &.matt {
-          line-height: 1.8;
-        }
-      }
+      //   @media only screen and (max-width: 350px) {
+      //     font-size: 1.7rem;
+      //     &.chris,
+      //     &.matt {
+      //       line-height: 1.8;
+      //     }
+      //   }
     }
 
     & .testimonial-content {
       width: 100%;
       position: absolute;
       left: 0;
-      bottom: -13rem;
-      @include respond(tab-port) {
-        bottom: -13rem;
-      }
+      bottom: -14rem;
+      //   @include respond(tab-port) {
+      //     bottom: -13rem;
+      //   }
       @include respond(phone) {
-        bottom: -13rem;
+        bottom: -15rem;
       }
     }
     & .pic {
@@ -170,7 +172,7 @@
     border-color: $color-grey-light-2;
   }
 }
-#testimonial-slider .description {
-  line-height: 1.7;
-  letter-spacing: 0;
-}
+// #testimonial-slider .description {
+//   line-height: 1.7;
+//   letter-spacing: 0;
+// }

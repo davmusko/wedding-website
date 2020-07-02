@@ -1,16 +1,24 @@
-let links = document.querySelectorAll(".navigation__link");
-
-links.forEach(function (link) {
-  link.addEventListener("click", function () {
-    document.querySelector("#nav-toggle").checked = false;
-  });
-});
-
 $(document).ready(function () {
   runSlider("#testimonial-slider");
   runSlider("#testimonial-slider2");
+  textFill();
+  $(window).on("resize", function () {
+    textFill();
+  });
+  $(".navigation__link").on("click", function () {
+    $("#nav-toggle").prop("checked", false);
+  });
 });
 
+function textFill() {
+  console.log("hi");
+  $(".description").textfill({
+    minFontPixels: 8,
+    maxFontPixels: 60,
+    changeLineHeight: false,
+    debug: true,
+  });
+}
 function runSlider(id) {
   $(id).owlCarousel({
     items: 3,

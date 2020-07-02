@@ -503,7 +503,7 @@ body {
 
 .couple__paragraph {
   background-color: #eee;
-  text-align: justify;
+  text-align: left;
   text-indent: 4rem;
   font-size: 1.8rem;
   line-height: 2;
@@ -973,45 +973,29 @@ i.icon {
   .owl-carousel .testimonial .description {
     font-weight: 500;
     text-indent: 4rem;
-    line-height: 1.7;
-    padding: 0 1.5rem;
-    height: 27rem;
-    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+    height: 30rem;
+    width: 100%;
     color: #343434;
     text-align: left;
     margin-bottom: 1rem;
     opacity: 0.9;
-    letter-spacing: 0px; }
-    .owl-carousel .testimonial .description.chris {
-      letter-spacing: -1px;
-      padding: 0 1rem; }
-    .owl-carousel .testimonial .description.chris, .owl-carousel .testimonial .description.matt {
-      line-height: 1.6; }
+    letter-spacing: -1px; }
     @media only screen and (max-width: 62em) {
       .owl-carousel .testimonial .description {
         text-indent: 4rem;
         height: 25rem; } }
     @media only screen and (max-width: 31.25em) {
       .owl-carousel .testimonial .description {
-        text-indent: 3rem;
-        height: 27rem;
-        padding: 0 0.5rem; } }
-    @media only screen and (max-width: 350px) {
-      .owl-carousel .testimonial .description {
-        font-size: 1.7rem; }
-        .owl-carousel .testimonial .description.chris, .owl-carousel .testimonial .description.matt {
-          line-height: 1.8; } }
+        text-indent: 3rem; } }
   .owl-carousel .testimonial .testimonial-content {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -13rem; }
-    @media only screen and (max-width: 62em) {
-      .owl-carousel .testimonial .testimonial-content {
-        bottom: -13rem; } }
+    bottom: -14rem; }
     @media only screen and (max-width: 31.25em) {
       .owl-carousel .testimonial .testimonial-content {
-        bottom: -13rem; } }
+        bottom: -15rem; } }
   .owl-carousel .testimonial .pic {
     display: inline-block;
     border: 0.6rem solid #eeeeee;
@@ -1055,10 +1039,6 @@ i.icon {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   background: #343434;
   border-color: #eeeeee; }
-
-#testimonial-slider .description {
-  line-height: 1.7;
-  letter-spacing: 0; }
 
 .registry__heading {
   padding-bottom: 8rem;
