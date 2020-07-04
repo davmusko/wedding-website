@@ -1,7 +1,7 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-
+  min-height: 1px;
   //   &:not(:last-child) {
   //     margin-bottom: $gutter-vertical;
 
@@ -14,6 +14,10 @@
   }
   @include respond(phone) {
     max-width: 53rem;
+  }
+  @include respond(big-desk) {
+    max-width: initial;
+    width: 90%;
   }
 
   @include clearfix;
@@ -56,33 +60,61 @@
   }
 }
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 1px;
 
-  @include respond(tab-land) {
-    width: 970px;
+  @media (max-width: 1024px) {
+    width: 70%;
   }
-  @include respond(tab-port) {
-    width: 750px;
+  @include respond(big-desk) {
+    max-width: initial;
+    width: 80%;
   }
-  @media (max-width: 775px) {
-    width: 550px;
-  }
-  @media (max-width: 600px) {
-    width: 480px;
-  }
-  @include respond(tab-port) {
-    width: 97%;
-  }
-  //   @media (max-width: 600px) {
-  //     padding: 0;
-  //     width: 80%;
+  // //   &:not(:last-child) {
+  // //     margin-bottom: $gutter-vertical;
+
+  // //     @include respond(tab-port) {
+  // //       margin-bottom: $gutter-vertical-small;
+  // //     }
+  // //   }
+  // @include respond(tab-port) {
+  //   max-width: 100rem;
+  // }
+  // @include respond(phone) {
+  //   max-width: 53rem;
+  // }
+
+  //   width: 1170px;
+
+  //   @include respond(tab-land) {
+  //     width: 970px;
   //   }
   //   @include respond(tab-port) {
-  //     width: 95%;
+  //     width: 750px;
   //   }
+  //   @media (max-width: 775px) {
+  //     width: 550px;
+  //   }
+  //   @media (max-width: 600px) {
+  //     width: 480px;
+  //   }
+  //   @include respond(tab-port) {
+  //     width: 97%;
+  //   }
+  //   @include respond(big-desk) {
+  //     max-width: initial;
+  //     width: 90%;
 }
+
+//   @media (max-width: 600px) {
+//     padding: 0;
+//     width: 80%;
+//   }
+//   @include respond(tab-port) {
+//     width: 95%;
+//   }
+// }
 .col-md-12 {
   position: relative;
   min-height: 1px;
