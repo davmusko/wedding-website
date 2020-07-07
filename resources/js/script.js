@@ -18,6 +18,7 @@ $(document).ready(function () {
       '<span class="fa fa-angle-left"></span>',
       '<span class="fa fa-angle-right"></span>',
     ],
+
     responsive: {
       0: {
         items: 1,

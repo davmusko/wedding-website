@@ -1004,6 +1004,12 @@ i.icon {
       color: #343434;
       text-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.7);
       transform: scale(1.2); }
+    @media (hover: none) {
+      .owl-carousel .owl-nav .owl-prev span:hover,
+      .owl-carousel .owl-nav .owl-next span:hover {
+        color: inherit;
+        text-shadow: 2px 2px 0.5rem rgba(0, 0, 0, 0.7);
+        transform: scale(1); } }
     @media only screen and (max-width: 28.125em) {
       .owl-carousel .owl-nav .owl-prev,
       .owl-carousel .owl-nav .owl-next {
@@ -1198,7 +1204,7 @@ i.icon {
       clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%);
       padding: 10rem 0 12rem; }
       .section-wedding-party .container:not(:last-child) {
-        padding: 3rem 0 2rem 0; } }
+        padding: 3rem 0 1.5rem 0; } }
 
 .section-couple {
   padding: 10rem 1rem 2rem 1rem; }

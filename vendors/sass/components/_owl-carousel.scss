@@ -99,10 +99,19 @@
       & span {
         transition: all 0.2s;
       }
+
       & span:hover {
         color: #343434;
         text-shadow: 2px 2px 1rem rgba($color-black, 0.7);
         transform: scale(1.2);
+      }
+
+      @media (hover: none) {
+        & span:hover {
+          color: inherit;
+          text-shadow: 2px 2px 0.5rem rgba($color-black, 0.7);
+          transform: scale(1);
+        }
       }
 
       @include respond(phone) {
