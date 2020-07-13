@@ -604,6 +604,12 @@ i.icon {
       .event--reception {
         margin-bottom: 0;
         background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/golfclub.jpg); } }
+  .event--hotel {
+    background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.3) 50%), url(../img/hotel.png); }
+    @media only screen and (max-width: 28.125em) {
+      .event--hotel {
+        margin-bottom: 0;
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../img/hotel.png); } }
   .event__info {
     width: 45%;
     text-align: center; }
