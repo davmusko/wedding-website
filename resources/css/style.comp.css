@@ -576,6 +576,145 @@ i.icon {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transform: translateY(0); }
 
+.card {
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 1.2rem;
+  max-width: 35rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .card__flex-wrapper {
+    min-height: 55rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem; }
+  .card__img {
+    width: 100%;
+    height: 20rem;
+    position: relative; }
+    .card__img--sign-up {
+      background-image: url(../img/email.png);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .card__img--rsvp {
+      background-image: url(../img/rsvp.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .card__img--hotel {
+      background-image: url(../img/map.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .card__icon-box {
+    position: absolute;
+    border: 2px solid white;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    height: 6.5rem;
+    width: 6.5rem;
+    display: inline-block;
+    background-color: #996675;
+    border-radius: 50%;
+    display: grid; }
+  .card__icon {
+    fill: white;
+    margin: auto;
+    height: 3.5rem;
+    width: 3.5rem; }
+  .card__body {
+    max-width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 4rem 2rem 2.5rem; }
+    .card__body h3 {
+      display: inline-block;
+      color: #996675;
+      align-self: flex-start;
+      margin-bottom: 1.5rem; }
+  .card--rsvp .card__body {
+    justify-content: flex-start; }
+  .card__text {
+    max-height: 13rem;
+    color: #343434;
+    font-size: 1.2rem;
+    position: relative;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    font-weight: 700;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0; }
+  .card__link {
+    color: #996675;
+    text-decoration: none; }
+    .card__link:hover {
+      text-decoration: underline; }
+  .card__btn {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #996675;
+    margin: 0 auto;
+    padding: 0.6em 1.2em;
+    border-radius: 2px;
+    border: 0.5px solid #996675;
+    flex: 0 0;
+    background-color: white;
+    transition: all 0.25s; }
+    .card__btn:link, .card__btn:visited {
+      display: inline-block;
+      text-decoration: none; }
+    .card__btn:hover, .card__btn:active, .card__btn:focus {
+      transform: translateY(-1px);
+      border-color: #996675;
+      background-color: #996675;
+      color: white;
+      outline: 0; }
+  .card .form-flex {
+    width: 100%; }
+  .card__form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: flex-start;
+    width: 100%;
+    margin-top: 1rem; }
+    .card__form .card__input {
+      width: 60%;
+      outline: 0;
+      background: #f2f2f2;
+      border: 0;
+      margin-bottom: 0.3rem;
+      font-family: inherit !important;
+      padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+      transition: all 0.1s; }
+      .card__form .card__input:last-of-type {
+        margin-bottom: 0.5rem; }
+      .card__form .card__input::placeholder {
+        color: #a7a7a7;
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 1px; }
+      .card__form .card__input:focus {
+        border-bottom: 2px solid #996675; }
+    .card__form .card__btn {
+      width: 60%;
+      cursor: pointer; }
+
 .event {
   padding: 4rem;
   width: 85%;
@@ -585,7 +724,7 @@ i.icon {
   background-repeat: no-repeat;
   background-attachment: scroll, fixed;
   border-radius: 1.5rem;
-  box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border: 2px solid #ebebeb; }
   @media only screen and (max-width: 47.9375em) {
     .event {
@@ -753,7 +892,7 @@ i.icon {
   border-radius: 50%;
   text-align: center;
   z-index: 10;
-  box-shadow: 0 3px 0.7rem 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   cursor: pointer;
   transition: all 0.2s; }
   @media only screen and (max-width: 47.9375em) {
@@ -786,7 +925,7 @@ i.icon {
         width: 2.5rem;
         height: 1px; } }
   .navigation__icon::after, .navigation__icon::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     transition: all 0.35s; }
@@ -935,7 +1074,7 @@ i.icon {
   .owl-carousel__testimonial:hover {
     transform: scale(1.05); }
     .owl-carousel__testimonial:hover .text-area {
-      box-shadow: 3px 3px 1.5rem rgba(0, 0, 0, 0.7); }
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
   @media only screen and (max-width: 28.125em) {
     .owl-carousel__testimonial {
       padding-left: 0;
@@ -978,7 +1117,7 @@ i.icon {
   width: 15rem;
   border: 0.6rem solid #eeeeee;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px #343434, 2px 2px 1rem rgba(0, 0, 0, 0.7); }
+  box-shadow: 0 0 3px 3px #343434; }
   @media only screen and (max-width: 28.125em) {
     .owl-carousel__pic {
       left: 50%;
@@ -1191,12 +1330,15 @@ i.icon {
   background-image: linear-gradient(to right bottom, #a7878fcc, #c7b3b8cc); }
 
 .section-events {
-  padding: 10rem 0 20rem 0;
+  padding: 10rem 0 10rem 0;
   clip-path: polygon(0 3%, 50% 0, 100% 3%, 100% 100%, 50% 97%, 0 100%);
   background-color: #eeeeee; }
   @media only screen and (max-width: 28.125em) {
     .section-events {
       clip-path: polygon(0 2%, 50% 0, 100% 2%, 100% 100%, 50% 98%, 0 100%); } }
+
+.section-cards {
+  padding-bottom: 20rem; }
 
 .section-wedding-party {
   position: relative;
@@ -1257,5 +1399,5 @@ i.icon {
   position: absolute;
   top: -10rem; }
 
-[class^="section"] .heading-2 {
+[class^='section'] .heading-2 {
   position: relative; }

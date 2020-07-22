@@ -1,23 +1,24 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/about-us";
-@import "components/bg-media";
-@import "components/button";
-@import "components/event";
-@import "components/footer";
-@import "components/header";
-@import "components/navigation";
-@import "components/popup";
-@import "components/owl-carousel";
-@import "components/registry";
-@import "components/slider";
+@import 'components/about-us';
+@import 'components/bg-media';
+@import 'components/button';
+@import 'components/card';
+@import 'components/event';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/popup';
+@import 'components/owl-carousel';
+@import 'components/registry';
+@import 'components/slider';
 
-@import "layout/grid";
+@import 'layout/grid';
 
-@import "pages/home";
+@import 'pages/home';

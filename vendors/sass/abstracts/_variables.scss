@@ -3,7 +3,9 @@ $color-primary: #a7878f;
 $color-primary-light: #c7b3b8;
 $color-primary-dark: #26724c;
 $color-primary-white: #cce5d9;
-
+$color-mauve: #996675;
+$color-text: #343434;
+$color-background: #bbbabb;
 $color-secondary: #993366;
 $color-secondary-light: #cc9ab3;
 $color-secondary-dark: #4c1a33;
@@ -23,8 +25,8 @@ $color-white: #ffffff;
 $color-black: #000000;
 //FONT
 $default-font-size: 1.6rem;
-$font-family-serif: "Nanum Myeongjo", serif;
-$font-family-sans-serif: "Comfortaa", sans-serif;
+$font-family-serif: 'Nanum Myeongjo', serif;
+$font-family-sans-serif: 'Comfortaa', sans-serif;
 
 // GRID
 $grid-width: 115rem;

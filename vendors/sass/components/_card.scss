@@ -1,0 +1,206 @@
+$flexSize: 35rem;
+$boxSpacing: 1.8rem;
+$fontSize: 1.2rem;
+.card {
+  overflow: hidden;
+  border-radius: 4px;
+  margin: $boxSpacing / 1.5;
+  max-width: $flexSize;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+  &__flex-wrapper {
+    min-height: 55rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+
+    &--sign-up {
+      background-image: url(../img/email.png);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--rsvp {
+      background-image: url(../img/rsvp.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--hotel {
+      background-image: url(../img/map.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__icon-box {
+    position: absolute;
+    border: 2px solid white;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    height: 6.5rem;
+    width: 6.5rem;
+    display: inline-block;
+    background-color: $color-mauve;
+    border-radius: 50%;
+    display: grid;
+  }
+  &__icon {
+    fill: white;
+    margin: auto;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  &__body {
+    max-width: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 4rem 2rem 2.5rem;
+    h3 {
+      display: inline-block;
+      color: $color-mauve;
+      align-self: flex-start;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &--rsvp .card__body {
+    justify-content: flex-start;
+  }
+  &__text {
+    max-height: 13rem;
+    color: $color-text;
+    font-size: $fontSize;
+    position: relative;
+    line-height: 1.5;
+    flex: 1;
+    display: flex;
+    font-weight: 700;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+  }
+  &__link {
+    color: $color-mauve;
+
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: $fontSize;
+    color: $color-mauve;
+    margin: 0 auto;
+    padding: 0.6em 1.2em;
+    border-radius: 2px;
+    border: 0.5px solid $color-mauve;
+    flex: 0 0;
+    background-color: white;
+    transition: all 0.25s;
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      transform: translateY(-1px);
+      border-color: $color-mauve;
+      background-color: $color-mauve;
+      color: white;
+      outline: 0;
+    }
+  }
+  .form-flex {
+    width: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    .card__input {
+      width: 60%;
+      outline: 0;
+      background: #f2f2f2;
+      border: 0;
+      margin-bottom: 0.3rem;
+      font-family: inherit !important;
+      padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+      transition: all 0.1s;
+      &:last-of-type {
+        margin-bottom: 0.5rem;
+      }
+      &::placeholder {
+        color: rgb(167, 167, 167);
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+      &:focus {
+        border-bottom: 2px solid $color-mauve;
+      }
+    }
+    .card__btn {
+      width: 60%;
+      cursor: pointer;
+    }
+  }
+}
+// @media (max-width: 1100px) {
+//   .card {
+//     margin: $boxSpacing/2.3;
+//     img {
+//       max-width: $flexSize * 1.2;
+//     }
+//   }
+// }
+
+// @media (max-width: 870px) {
+//   .card {
+//     max-width: $flexSize;
+//   }
+// }
+
+// @media (max-width: 570px) {
+//   .container {
+//     flex-flow: column nowrap;
+//     padding: 0;
+//   }
+
+//   .card {
+//     margin: $boxSpacing/2.4 1.1rem;
+//     height: $flexSize;
+//     max-width: $flexSize;
+//     flex: 1 1 auto;
+//     display: flex;
+//     background-color: white;
+//     box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+//     img {
+//       max-width: 100%;
+//     }
+//   }

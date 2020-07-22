@@ -13,7 +13,7 @@
 }
 .section {
   &-events {
-    padding: 10rem 0 20rem 0;
+    padding: 10rem 0 10rem 0;
     @include clipBoth;
     background-color: $color-grey-light-2;
 
@@ -23,6 +23,9 @@
     // @include respond(tab-port) {
     //   padding: 15rem 0;
     // }
+  }
+  &-cards {
+    padding-bottom: 20rem;
   }
   &-wedding-party {
     position: relative;
@@ -105,7 +108,7 @@
   top: -10rem;
 }
 
-[class^="section"] {
+[class^='section'] {
   & .heading-2 {
     position: relative;
   }
